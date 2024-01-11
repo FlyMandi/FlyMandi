@@ -4,8 +4,8 @@ Because we all need a virtual list of things to hold us accountable and because 
 ## To do:
 
 - Learn OpenGL Basics
-    - [X] <del> Setup w/ CMake
-    - [X] <del> Draw a Window with gflw3
+    - [X] Setup w/ CMake
+    - [X] Draw a Window with gflw3
     - [ ] Shaders
     - [ ] Buffers
     - [ ] Textures
@@ -14,6 +14,6 @@ Because we all need a virtual list of things to hold us accountable and because 
 ## Done:
     
 - How to Github
-    - [X] <del> Write a basic Markdown readme
-    - [X] <del> Upload a file from CLI
-    - [X] <del> Learn about commits, branches, pull requests, etc
+    - [X] Write a basic Markdown readme
+    - [X] Upload a file from CLI
+    - [X] Learn about commits, branches, pull requests, etc
