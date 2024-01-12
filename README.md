@@ -4,10 +4,11 @@ There are, however, some projects that you might find useful or intriguing.
 
 # List of projects:
 
-| Name & Hyperlink  | Type              | Language  | Engine/Framework  | Status    |
-| ---               | ---               | ---       | ---               | ---       |
-| 2D Classics       | Game Collection   | C++       | OpenGL            | WIP       |
-| Simple RPG        | Game              | C++       | OpenGL            | Planned   |
-| Background++      | User Tool         | C++       | *N/A*             | Planned   |
+| Name & Hyperlink                                  | Type              | Language  | Engine/Framework/API  | Status                    |
+| ---                                               | ---               | ---       | ---                   | ---                       |
+| [FlyMandi](https://github.com/FlyMandi/FlyMandi)  | Learning Docs     | Markdown  | *N/A*                 | WIP :black_nib:           |
+| 2D Classics                                       | Game Collection   | C++       | OpenGL                | To-do next :paperclip:    |
+| Simple RPG                                        | Game              | C++       | OpenGL                | Planned :page_with_curl:  |
+| Background++                                      | User Tool         | C++       | *N/A*                 | Planned :page_with_curl:  |
 
 Below, you can see the corresponding repositories. There's also [this to-do list](https://github.com/FlyMandi/FlyMandi/blob/main/TODO.md) where you can see what I'm currently learning and/or working on.
