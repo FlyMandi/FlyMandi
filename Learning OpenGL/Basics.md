@@ -10,7 +10,7 @@ Vulkan and Direct3D[^1] are both low-level APIs that, by design, remove many abs
 To use OpenGL with a basic project, I set up C++ with CMake[^2] and the following dependencies: [glad](https://glad.dav1d.de), [glfw](https://www.glfw.org/download) and [glm](https://github.com/g-truc/glm/releases), such that I include "glad.h", "glfw3.h", and "glm.hpp" in my header file.
 Glad requires KHR, which should come with your glad download. Glfw might require a glfw3.lib and glfw3.dll that you can get from the pre-compiled binaries [here](https://www.glfw.org/download).
 OpenGL itself is imported in CMakelists.txt, like in the following example:
-[^2]: I use the VSCode extensions CMake and CMaketools for now, but you can easily setup CMake through the Visual Studio IDE or XCode, too.
+[^2]: I use the VSCode extensions CMake (for intellisense) and CMaketools (for compiling) for now, but you can easily setup CMake through the Visual Studio IDE or XCode, too.
 ```
 cmake_minimum_required(VERSION 3.5)
 project(Snake VERSION 1.0.0)
