@@ -6,7 +6,7 @@ There are, however, some projects that you might find useful or intriguing.
 
 | Name & Hyperlink                                  | Type              | Language  | Engine/Framework/API  | Status                    |
 | ---                                               | ---               | ---       | ---                   | ---                       |
-| [FlyMandi](https://github.com/FlyMandi/FlyMandi)  | Learning Docs     | Markdown  | *N/A*                 | WIP :black_nib:           |
+| [FlyMandi](https://github.com/FlyMandi/FlyMandi)  | Learning Docs     | Markdown  | OpenGL                | WIP :black_nib:           |
 | 2D Classics                                       | Game Collection   | C++       | OpenGL                | To-do next :paperclip:    |
 | Simple RPG                                        | Game              | C++       | OpenGL                | Planned :page_with_curl:  |
 | Background++                                      | User Tool         | C++       | *N/A*                 | Planned :page_with_curl:  |

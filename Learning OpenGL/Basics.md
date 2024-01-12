@@ -12,7 +12,7 @@ Glad requires KHR, which should come with your glad download. Glfw might require
 OpenGL itself is imported in CMakelists.txt, like in the following example:
 ```
 cmake_minimum_required(VERSION 3.5)
-project(Snake VERSION 1.0)
+project(Snake VERSION 1.0.0)
 find_package(OpenGL REQUIRED)
 
 set(SOURCE_FILES 

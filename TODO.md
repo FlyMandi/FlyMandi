@@ -11,7 +11,7 @@ Because we all need a virtual list of things to hold us accountable and because 
     - :white_check_mark: <del> Draw a Window with gflw3
     - :white_check_mark: <del> What are Shaders?
     - :white_square_button: How to send data to GPU
-    - :white_square_button: Buffers
+    - :white_square_button: What are Buffers?
     - :white_square_button: Textures
     - :white_square_button: Geometry
 
