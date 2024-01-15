@@ -89,7 +89,7 @@ if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
 }
 ```
 are just some handy dandy error handling. Returning -1 should be self-explanatory[^3]. ```glfwInit()``` is literally a boolean function to tell you if the thing even started. 
-The second one is more complicated. What it does is fairly simple, which is to return -1 when OpenGL itself can't load, but the if statement is initially confusing. I'll get back to you on that.
+The second one is more complicated. What it does is fairly simple, which is to return -1 when OpenGL itself can't load, but the if statement is initially confusing. I'll get back to you on that :3
 
 [^3]: If not, I can give you a quick rundown. An int main() function is the main function of a program (duh lmao), it's basically the core logic of what you're trying to build. It's a function that returns an integer and expects to be returned a 0 (at some point) when the program has ended and not run into any errors. That's why 99% of C++ programs end on a "return 0" line of code. Now, returning anything other than 0 is known as an exit or error code. '-1' is usually used for things not initializing, but technically the value itself doesn't matter, as long as it isn't 0.
 
