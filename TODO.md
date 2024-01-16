@@ -3,14 +3,15 @@ Because we all need a virtual list of things to hold us accountable and because 
 
 ## Current objective: 
 - Learn the basics of how to use C++ with OpenGL.
-    - Use that knowledge to build a simple game, like Snake.
+    - Use that knowledge to build a simple game, like Snake or Pong.
 
 ## To do:
 - Learn OpenGL Basics
     - :white_check_mark: <del> Setup w/ CMake
-    - :white_check_mark: <del> Draw a Window with gflw3
-    - :white_check_mark: <del> What are Shaders?
-    - :white_square_button: How to send data to GPU
+    - :white_check_mark: <del> Draw a Window to the screen
+    - :white_square_button: How does OpenGL draw pixels?
+    - :white_square_button: What are Shaders?
+    - :white_square_button: How to send data to the GPU
     - :white_square_button: What are Buffers?
     - :white_square_button: Textures
     - :white_square_button: Geometry

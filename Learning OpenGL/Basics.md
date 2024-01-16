@@ -2,14 +2,20 @@
 
 This document won't make any sense to read if you're new to programming or know nothing about C++/OOP.
 But, if you're like me, know your way around some basic C++ but have never built anything substantial before, then this might be for you.
-I've been following along w/ [GetIntoGameDev's playlist](https://www.youtube.com/playlist?list=PLn3eTxaOtL2PHxN8EHf-ktAcN-sGETKfw) to get me started and set up with a basic project. You can choose to do so to, and hopefully, I've ran into the same hurdles that you're currently on and I can clear up some of your doubts. [Here's his github repo](https://github.com/amengede/OpenGL-for-Beginners/tree/main) to go along with it.
+I've been following along w/ [GetIntoGameDev's playlist](https://www.youtube.com/playlist?list=PLn3eTxaOtL2PHxN8EHf-ktAcN-sGETKfw) to get me started and set up with a basic project. You can choose to do so to, and hopefully, I've ran into the same hurdles that you're currently on and I can clear up some of your doubts. [Here's his github repo](https://github.com/amengede/OpenGL-for-Beginners/tree/main) to go along with it and also [The LearnOpenGL.com website](https://learnopengl.com/Getting-started/OpenGL) that covers this.
 
 # Why OpenGL?
 
-You've probably heard of DirectX/Vulkan if you're a gamer and ever looked at the graphics settings in a game. But besides the fact that OpenGL/DirectX/Vulkan are Graphics APIs and mutually exclusive, I really knew nothing about the APIs themselves. 
-Vulkan and Direct3D[^1] are both low-level APIs that, by design, remove many abstractions compared to OpenGL. This allows for granular control over resource management (GPU/VRAM) but in practice makes it unlikely to be a good fit to first get into. That's why I chose OpenGL to start my gamedev/graphics learning process. Also, it's been a stable standard in gamedev for decades, so it's got some really great learning resources out there.
+You've probably heard of DirectX/Vulkan if you're a gamer and ever looked at the graphics settings in a game. But besides the fact that OpenGL/DirectX/Vulkan are Graphics APIs[^1] and mutually exclusive, I really knew nothing about the APIs themselves. 
+Vulkan and Direct3D are both low-level APIs that, by design, remove many abstractions compared to OpenGL. This allows for granular control over resource management (GPU/VRAM) but in practice makes it unlikely to be a good fit to first get into. That's why I chose OpenGL to start my gamedev/graphics learning process. Also, it's been a stable standard in gamedev for decades, so it's got some really great learning resources out there.
 
-[^1]: DirectX is a collection of Microsoft's APIs that includes Direct3D, their Graphics API.
+[^1]: Technically, OpenGL is not an API, but a Specification... and DirectX is a collection of Microsoft's APIs that includes Direct3D, their Graphics API.
+
+# Core vs Immediate
+
+You can think of these profiles as something like Python vs C++. The Immediate profile is a much more abstracted, high-level[^4] way of interfacing with the graphics card that's easy to understand but doesn't offer much of the functionality that people require to build high-performance applications like games, for example. So, I'll be going for the core profile, the much more maintained and lower-level version of OpenGL. 
+
+[^4]: A high level programming language is a language that removes the _need_ for you to do stuff like manual memory management and resource allocation, but also removes the _possibility_ to do that. This would be like driving an automatic vs a manual car. Sure, a manual gives you much more granular control over your engine, but an automatic is quicker and easier to learn when you're starting out and don't know how an engine connects to your wheels. High level means abstracted and (usually) easy to implement, while low-level usually means hard to learn and use, but very powerful and customizable. In practice, this means, if you want to build a game with OpenGL, you should learn the "core" profile.
 
 # How set up OpenGL?
 
@@ -72,7 +78,7 @@ while (!glfwWindowShouldClose(window)) {
 glfwTerminate();
 return 0;
 ```
-Some of this should come very intuitive here. ```window = glfwCreateWindow(640, 480, "Hello Window!", NULL, NULL);```, for instance. Create a 640x480p window, name it "Hello Window" and the last 2 parameters are monitor selection and context sharing. Andrew glanced over those for now, so I'm going to, too. They'll not be needed for something so rudimentary as opening a window.
+Some of this should be very intuitive to understand here. ```window = glfwCreateWindow(640, 480, "Hello Window!", NULL, NULL);```, for instance. Create a 640x480p window, name it "Hello Window" and the last 2 parameters are monitor selection and context sharing. Andrew glanced over those for now, so I'm going to, too. They'll not be needed for something so rudimentary as opening a window.
 ```glfwMakeContextCurrent(window);``` is needed, because we created a window, but that's just a variable called window, so we need to tell OpenGL that that's actually the window we want to draw to the screen. 
 These small if blocks of
 ```
@@ -89,10 +95,10 @@ if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
 }
 ```
 are just some handy dandy error handling. Returning -1 should be self-explanatory[^3]. ```glfwInit()``` is literally a boolean function to tell you if the thing even started. 
-The second one is more complicated. What it does is fairly simple, which is to return -1 when OpenGL itself can't load, but the if statement is initially confusing. I'll get back to you on that :3
+The second one is more complicated. What it does is fairly simple, which is to return -1 when OpenGL itself can't load. The if statement uses ```gladLoadGLLoader()```. OpenGL is being loaded in by glad here, which is an [OpenGL Loading Library](https://www.khronos.org/opengl/wiki/OpenGL_Loading_Library). The ```(GLADloadproc)glfwGetProcAddress)``` is a [C++ Type Cast](https://github.com/FlyMandi/FlyMandi/blob/main/Learning%20C++/Types.md#type-casting) and you can read the syntax explanation [here.](https://computergraphics.stackexchange.com/a/8641)
 
 [^3]: If not, I can give you a quick rundown. An int main() function is the main function of a program (duh lmao), it's basically the core logic of what you're trying to build. It's a function that returns an integer and expects to be returned a 0 (at some point) when the program has ended and not run into any errors. That's why 99% of C++ programs end on a "return 0" line of code. Now, returning anything other than 0 is known as an exit or error code. '-1' is usually used for things not initializing, but technically the value itself doesn't matter, as long as it isn't 0.
 
-# What's a shader?
+# Cool Window, but how does OpenGL actually work behind the scenes?
 
-Good question. It's the same one I'm having right now.
+Good question. [Here's how it works.](https://github.com/FlyMandi/FlyMandi/blob/main/Learning%20OpenGL/Rendering.md)
