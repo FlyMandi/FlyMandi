@@ -10,27 +10,28 @@ Because we all need a virtual list of things to hold us accountable and because 
 
 ## To do:
 - Learn OpenGL Basics
-    - :white_check_mark: <del> Setup w/ CMake
-    - :white_check_mark: <del> Draw a Window to the screen
-    - :white_square_button: How does OpenGL draw pixels?
-    - :white_square_button: What are Shaders?
-    - :white_square_button: How to send data to the GPU
-    - :white_square_button: OpenGL Buffers
-    - :white_square_button: Textures
-    - :white_square_button: Geometry
+    - ✅ <del> Setup w/ CMake
+    - ✅ <del> Draw a Window to the screen
+    - 🔳 How does OpenGL draw pixels?
+    - 🔳 What are Shaders?
+    - 🔳 How to send data to the GPU
+    - 🔳 OpenGL Buffers
+    - 🔳 Textures
+    - 🔳 Geometry
 
 - Document my Learnings
     - 🔳 Cover Basic Programming
         - 🔳 Cover IDEs, Compilers, linkers, etc etc
-        - :white_check_mark: <del> Cover variables
+            - 🔳 update hyperlinks in C++ basics
+        - ✅ <del> Cover variables
         - 🔳 Cover functions
         - 🔳 Cover pointers
-        - :white_check_mark: <del> Cover recursion
+        - ✅ <del> Cover recursion
     - 🔳 Cover basic C++
         - ✅ <del> Namespaces
         - ✅ <del> Variables
-        - ✅ <del> Functions
         - ✅ <del> Types & Return Types
+        - 🔳 Functions
         - 🔳 Pointers & References
         - 🔳 Type Casting
     - 🔳 Cover C++ Classes
@@ -43,6 +44,6 @@ Because we all need a virtual list of things to hold us accountable and because 
 
 ## Done:
 - <del> How to Github Basics </del>
-    - :white_check_mark: <del> Learn some Markdown
-    - :white_check_mark: <del> Upload a file from CLI (Git Bash)
-    - :white_check_mark: <del> Learn about commits, branches, pull requests, etc
+    - ✅ <del> Learn some Markdown
+    - ✅ <del> Upload a file from CLI (Git Bash)
+    - ✅ <del> Learn about commits, branches, pull requests, etc

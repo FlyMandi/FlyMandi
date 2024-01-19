@@ -44,9 +44,8 @@ returnType function_name (argumentType argument_name){
 }
 ```
 For example:
-```
-int sum(int& )
-```
+
+//TODO
 
 ### Return Types
 
