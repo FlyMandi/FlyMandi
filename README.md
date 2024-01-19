@@ -4,8 +4,8 @@ There are, however, some projects that you might find useful or intriguing.
 
 # List of projects:
 
-| Name & Hyperlink                                  | Type              | Language  | Engine/Framework/API  | Status                    |
-| ---                                               | ---               | ---       | ---                   | ---                       |
+| Name & Hyperlink                                  | Type              | Language  | Engine/Framework/API  | Status                       |
+| ---                                               | ---               | ---       | ---                   | ---                          |
 | [FlyMandi](https://github.com/FlyMandi/FlyMandi)  | Documentation lib | Markdown  | *N/A*                 | WIP :black_nib:           |
 | 2D Classics                                       | Game Collection   | C++       | OpenGL                | WIP :black_nib:           |
 | Background++                                      | User Tool         | C++       | *N/A*                 | To-do next :paperclip:    |
