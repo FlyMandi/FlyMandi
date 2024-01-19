@@ -38,6 +38,8 @@ Because we all need a virtual list of things to hold us accountable and because 
     - 🔳 Cover basic F#
         - 🔳 F# syntax basics
         - ✅ <del> Pattern Matching
+        - 🔳 Example F# File
+    - 🔳 Cover Graphics Programming Concepts
 
 ## Done:
 - <del> How to Github Basics </del>
