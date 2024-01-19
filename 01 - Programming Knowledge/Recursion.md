@@ -45,7 +45,7 @@ Big O notation is a quick way of knowing how time-efficient a program will be wh
 [image source](https://blog.stackademic.com/how-to-calculate-big-o-notation-time-complexity-5504bed8d292)
 
 Big O notation is not precise, but it's still very important, because it allows a good idea of the runtime when scaled. What does that mean? 
-Let's say, every time your program runs, you have to do 1000 function calls and operations, even for the simplest of inputs. Compared to a program that has to do 10 calculations, that seems like a very inefficient program. However, what if your program ran on linear time and the other one on quadratic time? This would mean that for ```n = 1000```, your computations will be 2000, while theirs will be 1,000,000. See how those 1000 computations don't really matter? What matters most for a scalable program is the big O time complexity.
+Let's say, every time your program runs, you have to do 1000 function calls and operations, even for the simplest of inputs. Compared to a program that has to do 10 calculations, that seems like a very inefficient program. However, what if your program ran on linear time and the other one on quadratic time? This would mean that for ```n = 1000```, your computations will be 2000, while theirs will be 1,000,010. See how those 1000 computations don't really matter? What matters most for a scalable program is the big O time complexity.
 This is why big O is presented as just big O, not a precise runtime calculation. 
 O(n + 1) is still O(n) and so is O(n + 999,999,999).
 
