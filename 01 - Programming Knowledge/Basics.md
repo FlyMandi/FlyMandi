@@ -82,6 +82,10 @@ This, while being independent of high-level vs. low-level, usually corresponds w
 
 //TODO
 
+# What are Data types?
+
+//TODO
+
 # What are pointers?
 
 //TODO
