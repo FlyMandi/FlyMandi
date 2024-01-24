@@ -89,6 +89,8 @@ This, while being independent of high-level vs. low-level, usually corresponds w
 
 # What are pointers?
 
+A pointer is a simple number that stores the memory address of an object and is able to return it via accessing that address. 
+
 //TODO
 
 # Equality, Assignment, etc.
