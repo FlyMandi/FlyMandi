@@ -96,3 +96,7 @@ A pointer is a simple number that stores the memory address of an object and is 
 # Equality, Assignment, etc.
 
 //TODO
+
+# Error Handling
+
+//TODO

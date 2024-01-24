@@ -41,6 +41,7 @@ Because we all need a virtual list of things to hold us accountable and because 
         - ✅ <del> Pattern Matching
         - 🔳 Example F# File
     - 🔳 Cover Graphics Programming Concepts
+    - 🔳 Turn TODO.md into FlyMandi.TODO
 
 ## Done:
 - <del> How to Github Basics </del>

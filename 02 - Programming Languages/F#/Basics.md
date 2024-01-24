@@ -6,6 +6,10 @@
 
 //TODO
 
+There is also a [void type] equivalent in F# called Unit.
+
+//TODO
+
 # F# value Types
 
 //TODO
@@ -21,6 +25,8 @@
 # F# Operators
 
 The equality operator is ```=``` and the assignment operator is ```<-```. The latter can only be used on a mutable value.
+
+//TODO
 
 # Matching
 Pattern matching is one of the most fun things you can do in F#.
@@ -71,3 +77,10 @@ let rec double (x: List<int>): List<int> =
 
 
 This is _all_ of the code this function needs to run. I don't have to define the words ```head```, ```rest``` or anything I put in a matching case. This means you can save a lot of time by writing something as a pattern match, if you do it correctly. 
+
+Another use case of pattern matching is [error handling](../../01%20-%20Programming%20Knowledge/Basics.md/#error-handling).
+```
+try input with
+|Not Found -> raise Not Found
+
+```
