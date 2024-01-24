@@ -6,17 +6,21 @@
 
 //TODO
 
-# F# Types
+# F# value Types
 
 //TODO
 
-## F# Lists
+# F# values vs. mutables, "variables"
 
 //TODO
 
-## F# 
+# F# Datatypes
 
 //TODO
+
+# F# Operators
+
+The equality operator is ```=``` and the assignment operator is ```<-```. The latter can only be used on a mutable value.
 
 # Matching
 Pattern matching is one of the most fun things you can do in F#.

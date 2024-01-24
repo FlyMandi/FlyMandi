@@ -2,7 +2,13 @@ These are the bare bones of programming. If you don't understand something that'
 
 # What's a programming language?
 
+You can think of a programming language as a language that's used to talk to a computer. Programming is simply the act of translating what we want the software (game or tool or otherwise) to do, from a human language to something a computer can understand and carry out.
+
 //TODO
+
+## High-level vs. low-level
+
+This is a matter of perspective and mostly a tool of comparison. For example, when looking from the perspective of assembly, the language C is a high-level language, since it's much more abstracted. However, when compared to Python, C is definitely a low-level language because of the same principle. Again, Python abstracts a lot more concepts. Generally, the lower level something is, the harder it is to learn and to write, but the easier it is for the machine to compile & run. The reverse is true, since when you write code in a high-level language, it might be much easier, but the compiling/interpreting/running can take a lot more time, since memory/resource management is not a primary concern.
 
 ## Compilers
 
@@ -19,11 +25,6 @@ These are the bare bones of programming. If you don't understand something that'
 ## IDEs
 
 An IDE, Integrated Development Environment, includes 
-
-## High-level vs. low-level
-
-This is a matter of perspective and mostly a tool of comparison. For example, when looking from the perspective of assembly, the language C is a high-level language, since it's much more abstracted. However, when compared to Python, C is definitely a low-level language because of the same principle. Again, Python abstracts a lot more concepts. Generally, the lower level something is, the harder it is to learn and to write, but the easier it is for the machine to compile & run. The reverse is true, since when you write code in a high-level language, it might be much easier, but the compiling/interpreting/running can take a lot more time, since memory/resource management is not a primary concern.
-
 
 # What are variables?
 
@@ -87,5 +88,9 @@ This, while being independent of high-level vs. low-level, usually corresponds w
 //TODO
 
 # What are pointers?
+
+//TODO
+
+# Equality, Assignment, etc.
 
 //TODO
