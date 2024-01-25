@@ -63,7 +63,18 @@ void hello_world(){
 
 # Pointers and References
 
-//TODO
+In C++, there is differentiation between a pointer and a reference. While these two might seem similar or identical at first, they aren't.
+
+The pointer operator, ```*```, is used for storage of the memory address of an object, while the reference operator, ```&```, is used for creating an alias for an object. 
+
+In short, a pointer is a number that corresponds to the memory address of an object and can therefore be ```NULL```, a ```nullptr```. A pointer can be re-assigned while a reference cannot. A reference can also _never_ be ```NULL``` and a null reference means some bad, stinky code was written. A reference also doesn't hold a value in itself, it simply refers to an object, which is why it can't be ```NULL```.
+
+For example, if we wanted a quick way to access an important element of a list, we would create a pointer. Because we proabably would want to be able to change that element.
+But, if we wanted to create a function and one of the arguments is a before established variable (like gravity), we'd simply use a reference to our value, which saves memory space and makes sure that we don't try to change the value from within the function _and_ we make sure that by changing our gravity variable from before, our changes carry over. In case we were suddenly calculating a fall on the moon. Or Mars.
+
+Correctly using both pointers and references can save a lot of runtime, but also makes the written code more legible and stable.
+
+More on the difference between a pointer and a reference [here](https://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable).
 
 # Type Casting
 
