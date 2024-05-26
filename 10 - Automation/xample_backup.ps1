@@ -1,3 +1,4 @@
+# Parameter that would be called with a CLI flag, no default
 Param(
     [string]$FromFolder
 )
