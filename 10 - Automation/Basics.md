@@ -9,6 +9,7 @@ All of the following commands require a Windows Terminal, CMD or PowerShell wind
 ```winget upgrade``` will show and perform updates from packages that are registered, these include apps from the microsoft store. If you know the name of a package, which is usually ```dev.app``` (or ```app.app``` for some reason), you can install it right away with ```winget install <packagename>```, but if you don't, just hit the good ol' ```winget search```. There are lots more packages than you might expect, for example, ```winget search runescape``` returns:
 
 ![alt text](image.png)
+
 But we all know you prefer RuneLite.
 
 Winget isn't the best user experience since it often relies on the msstore versions of apps (which are sometimes truly terrible) so, when you're not installing a native msstore app or a microsoft product, use scoop, instead.
@@ -55,12 +56,11 @@ Output: ```Today's Sunday, the 26 of May 2024.```
 
 Here, the -Format flag takes a string and reads just that, how to format Get-Date. The main takeaway here are flags, how to use them, and the fact that variables get processed within a string[^2].
 
+## Automating Simple Tasks in PowerShell
+
 Example Application: [Automated, compressed backup using WinRAR](https://github.com/FlyMandi/FlyMandi/blob/main/10%20-%20Automation/xample_backup.ps1)
 
-
-
-
-
+//TODO  
 
 [^1]: Using the Windows Terminal app is a great idea. It's a lot like a linux bash. It's like a modern combination of cmd & PowerShell. Install it by running ```winget install Microsoft.WindowsTerminal``` and you can read up on cool extra customization [here](https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup). 
 
