@@ -62,6 +62,6 @@ Example Application: [Automated, compressed backup using WinRAR](https://github.
 
 //TODO  
 
-[^1]: Using the Windows Terminal app is a great idea. It's a lot like a linux bash. It's like a modern combination of cmd & PowerShell. Install it by running ```winget install Microsoft.WindowsTerminal``` and you can read up on cool extra customization [here](https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup). 
+[^1]: Using the Windows Terminal app is a great idea. It's a lot like a linux bash. It's like a modern combination of cmd & PowerShell. Install it by running ```winget install Microsoft.WindowsTerminal``` and you can read up on cool extra customization [here](https://dev.to/ansonh/customize-beautify-your-windows-terminal-2022-edition-541l) and [here](https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup).
 
 [^2]: If you wanted to output the string "I make $$$", you'd have to put a backtick in front of every dollar sign.
