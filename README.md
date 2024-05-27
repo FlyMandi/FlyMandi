@@ -1,6 +1,6 @@
 ## Welcome.
 This is a collection of repositories of my personal projects. Most of these serve the greater purpose of deepening my understanding of how stuff works and how to build said stuff.
-There are, however, some projects that you might find useful or intriguing.
+There are, however, some projects that you might find useful or intriguing, like PowerShell Scripts to automate things I do often within Windows.
 
 # List of projects:
 
