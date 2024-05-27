@@ -7,7 +7,7 @@ There are, however, some projects that you might find useful or intriguing.
 | Name & Hyperlink                                  | Type              | Language  | Engine/Framework/API  | Status                       |
 | ---                                               | ---               | ---       | ---                   | ---                          |
 | [FlyMandi](https://github.com/FlyMandi/FlyMandi)  | Documentation lib | Markdown  | *N/A*                 | WIP :black_nib:           |
-| PWSH Collection                                   | Automation Scripts| PowerShell| .NET/Windows          | WIP ✒️                       |
+| [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)| Automation Scripts| PowerShell| .NET/Windows          | WIP ✒️                       |
 | 2D Classics                                       | Game Collection   | C++       | OpenGL                | Planned :page_with_curl:  |
 | Background++                                      | User Tool         | C++       | *N/A*                 | To-do next :paperclip:    |
 | Simple RPG                                        | Game              | C++       | OpenGL                | Planned :page_with_curl:  |
