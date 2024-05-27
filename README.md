@@ -8,8 +8,5 @@ There are, however, some projects that you might find useful or intriguing.
 | ---                                               | ---               | ---       | ---                   | ---                          |
 | [FlyMandi](https://github.com/FlyMandi/FlyMandi)  | Documentation lib | Markdown  | *N/A*                 | WIP :black_nib:           |
 | [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)| Automation Scripts| PowerShell| .NET/Windows          | WIP ✒️                       |
-| 2D Classics                                       | Game Collection   | C++       | OpenGL                | Planned :page_with_curl:  |
-| Background++                                      | User Tool         | C++       | *N/A*                 | To-do next :paperclip:    |
-| Simple RPG                                        | Game              | C++       | OpenGL                | Planned :page_with_curl:  |
 
 Below, you can see the corresponding repositories.
