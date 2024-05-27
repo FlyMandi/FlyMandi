@@ -58,7 +58,7 @@ Here, the -Format flag takes a string and reads just that, how to format Get-Dat
 
 ## Automating Simple Tasks in PowerShell
 
-Example Application: [Automated, compressed backup using WinRAR](https://github.com/FlyMandi/FlyMandi/blob/main/10%20-%20Automation/xample_backup.ps1)
+Example Application: [Automated, compressed backup using WinRAR](https://github.com/FlyMandi/PWSH-Collection/backup.ps1)
 
 //TODO  
 
