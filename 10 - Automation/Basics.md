@@ -54,7 +54,7 @@ Write-Host "Today's $day, the $date of $month $year."
 ```
 Output: ```Today's Sunday, the 26 of May 2024.```
 
-Here, the -Format flag takes a string and reads just that, how to format Get-Date. The main takeaway here are flags, how to use them, and the fact that variables get processed within a string[^2].
+Here, the -Format flag takes a string and reads just that, how to format Get-Date. The main takeaway here are flags, how to use them, and the fact that variables get processed within a string[^1].
 
 ## Creating a user profile in PowerShell
 
@@ -85,4 +85,4 @@ Then, I noticed I wanted to change the theme to [winfetch](https://github.com/lp
 
 Sometimes, you'll run into an issue that is not easily resolved by an application update. Such was the case with an annoying issue that would show an old version number for Discord inside `winget-cli`, while having the newest version installed. As consequence, winget would tell me all the time that my discord was out-of-date. Tired of this nonsense, I wrote [this fix](https://github.com/FlyMandi/PWSH-Collection/tree/main?tab=readme-ov-file#fix-winget-showing-out-of-date-package-version-with-updated-app)
 
-[^2]: If you wanted to output the string "I make $$$", you'd have to put a backtick in front of every dollar sign.
+[^1]: If you wanted to output the string `I make $money`, you'd have to write ```I make `$money```. A backtick reverts the dollar sign to plain text instead of trying to parse a variable.
