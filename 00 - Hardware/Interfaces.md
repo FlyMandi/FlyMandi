@@ -44,6 +44,8 @@ USB Type B is mostly found on audio interfaces, MIDI controllers and other Digit
 
 ## HDMI
 
+## DisplayPort
+
 # Audio
 
 ## 3.5mm

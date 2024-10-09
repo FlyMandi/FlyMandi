@@ -1,8 +1,14 @@
 # Modern Display Basics
 
+//TODO
+
 ## Pixels
 
+//TODO
+
 ### RGB
+
+//TODO
 
 ## Resolution
 
@@ -50,7 +56,11 @@ The difference between 1080p and 1080i is not that the "p" in "1080p" stands for
 
 ## Output
 
+//TODO
+
 ### FPS vs Hertz (Hz)
+
+//TODO
 
 # Display Types
 
@@ -61,17 +71,31 @@ CRTs don't have a native res!!
 
 ## LCD
 
+//TODO
+
 ### TN
+
+//TODO
 
 ### IPS
 
+//TODO
+
 ### VA
+
+//TODO
 
 ## OLED
 
+//TODO
+
 ### QD-OLED
 
+//TODO
+
 ### wOLED
+
+//TODO
 
 # Display Technologies
 
@@ -81,16 +105,18 @@ High Dynamic Range (HDR) is a technology that makes it possible to have an image
 
 ## Local Dimming Zones
 
+//TODO
+
 ## Motion Smoothing
 
-# Signal Carriers (connections)
+//TODO
 
+# Connections
 
+//TODO
 
-## DisplayPort
+## Other Display Transmission Methods
 
-## Other
-
-Optical, wireless, etc. //TODO
+Wireless, etc. //TODO
 
 [^1]: Laserlicht, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
