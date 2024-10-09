@@ -18,7 +18,7 @@ Here's a fairly exhaustive list of Display Resolutions:
     - `160x120`, other names: QQVGA or Quarter Quarter VGA;
     - `320x240`, other names: QVGA or Quarter VGA;
     - `480x320`, other names: HVGA or Half-size VGA; The first iPhone used this resolution.
-    - `640x480`, other names: VGA, SD, Standard Definition; that name stems from the [VGA]() Standard Resolution.
+    - `640x480`, other names: VGA, SD, Standard Definition; that name stems from the [VGA](../00%20-%20Hardware/Interfaces.md#VGA) Standard Resolution.
     - `800x600`, other names: SVGA or Super VGA;
     - `1024x768`, other names: XGA or eXtended Graphics Array; 
     - `1152x864`, other names: XGA+ or eXtended Graphics Array Plus;
@@ -43,9 +43,10 @@ Here's a fairly exhaustive list of Display Resolutions:
 
 - `32:9` Aspect Ratio, also called "Ultrawide":
 
-### Progressive Scan vs. Interlaced
+### Progressive Scan vs. Interlaced Scan
 
-The difference between 1080p and 1080i is not that the "p" in "1080p" stands for the word "pixels", but rather "Progressive Scan".
+The difference between 1080p and 1080i is not that the "p" in "1080p" stands for the word "pixels", but rather "Progressive Scan". What this means, is that the image is displayed at once. "Interlaced Scan", in for example 1080i, refers to the technique of showing the image in sequences of scanlines that alternate between each other, rather than all at once. This can lead to the percieved doubling of framerate. Interlacing was mainly used on CRTs.
+![Interlacing Shown](https://upload.wikimedia.org/wikipedia/commons/1/1f/CRT_image_creation_animation.gif)[^1]
 
 ## Output
 
@@ -91,3 +92,5 @@ High Dynamic Range (HDR) is a technology that makes it possible to have an image
 ## Other
 
 Optical, wireless, etc. //TODO
+
+[^1]: Laserlicht, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
