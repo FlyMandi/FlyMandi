@@ -36,6 +36,9 @@ Here's a fairly exhaustive list of Display Resolutions:
     - `1366x768`, sometimes called 768p; The 16:9 XGA equivalent; Still found in some not-that-old budget laptops, like the 2015 Acer Aspire 3 (that I happen to own, lol).
     - `1920x1080`, other names: 1080p, FHD or Full HD; the most common resolution throughout the 2010s.
     - `2560x1440`, other names: 1440p, QHD or Quad HD; exactly 4x the size of HD and 100x the size of 144p. Sometimes called 'WQHD' just to distinguish from qHD.
+    - `3840x2160`, other names: 2160p, 4K UHD, 4K; 4x the size of 1080p and our infamous, very well known 4K. Known for many as 'the last resolution we'll ever need', but I'm sure that'll age just as well as the infamous [Bill Gates line](https://quoteinvestigator.com/2011/09/08/640k-enough/).
+    - `7680x4320`, other names: 8K UHD; Used for tech demos and insane projects like [these](https://www.holoxica.com/looking-glass-8k-gen2), but I'm sure that'll change in a couple generations of hardware.
+    - `15360x8640`, other names: 16K UHD; there are very few 16K-capable devices, let alone videos or similar media in this resolution.
 
 
 - `32:9` Aspect Ratio, also called "Ultrawide":
