@@ -41,13 +41,7 @@ High Dynamic Range (HDR) is a technology that makes it possible to have an image
 
 # Signal Carriers (connections)
 
-## Composite/RCA/coaxial
 
-## DVI
-
-## VGA
-
-## HDMI
 
 ## DisplayPort
 

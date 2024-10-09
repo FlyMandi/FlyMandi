@@ -8,7 +8,7 @@ For instance, updating/installing/uninstalling apps with [package managers](), l
 All of the following commands require a Windows Terminal, CMD or PowerShell window.
 ```winget upgrade``` will show and perform updates from packages that are registered, these include apps from the microsoft store. If you know the name of a package, which is usually ```dev.app``` (or ```app.app``` for some reason), you can install it right away with ```winget install <packagename>```, but if you don't, just hit the good ol' ```winget search```. There are lots more packages than you might expect, for example, ```winget search runescape``` returns:
 
-![alt text](image.png)
+![alt text](RunescapeCLI.png)
 
 But we all know you prefer RuneLite.
 
