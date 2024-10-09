@@ -52,6 +52,7 @@ Here's a fairly exhaustive list of Display Resolutions:
 ### Progressive Scan vs. Interlaced Scan
 
 The difference between 1080p and 1080i is not that the "p" in "1080p" stands for the word "pixels", but rather "Progressive Scan". What this means, is that the image is displayed at once. "Interlaced Scan", in for example 1080i, refers to the technique of showing the image in sequences of scanlines that alternate between each other, rather than all at once. This can lead to the percieved doubling of framerate. Interlacing was mainly used on CRTs.
+
 ![Interlacing Shown](CRT_Scanlines.gif)[^1]
 
 ## Output
