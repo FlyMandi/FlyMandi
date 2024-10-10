@@ -16,7 +16,7 @@ Display Resolution, or Pixel Count, can be understood as the canvas size for a D
 
 ### Display resolutions and names
 
-Resolutions are usually called by their vertical pixel count. "480p", for example. The problem with this approach is that "480p" can either mean 640x480, which has an aspect ratio of 4:3, or 854x480, its 16:9 equivalent. They can also be called "SD" or "Standard Definition", as if it wasn't confusing enough. So, for example, "SD Widescreen" is the same as "480p 16:9".
+Resolutions are usually called by their vertical pixel count. '480p', for example. The problem with this approach is that '480p' can either mean 640x480, which has an aspect ratio of 4:3, or 854x480, its 16:9 equivalent. They can also be called 'SD' or 'Standard Definition', as if it wasn't confusing enough. So, for example, 'SD Widescreen' is the same as '480p 16:9'.
 
 Here's a fairly exhaustive list of Display Resolutions:
 
@@ -46,22 +46,27 @@ Here's a fairly exhaustive list of Display Resolutions:
     - `7680x4320`, other names: 8K UHD; Used for tech demos and insane projects like [these](https://www.holoxica.com/looking-glass-8k-gen2), but I'm sure that'll change in a couple generations of hardware.
     - `15360x8640`, other names: 16K UHD; there are very few 16K-capable devices, let alone videos or similar media in this resolution.
 
+Other notable Aspect Ratios include `32:9`, sometimes `21:9`, both commonly called 'Ultrawide' and `1:1`, a square aspect ratios found rarely on any type of monitor, but sometimes.
 
-- `32:9` Aspect Ratio, also called "Ultrawide":
+## Image Refresh
+
+Now, a Display doesn't just display a static image. Unless it's a Digital Signage exclusive, in which case, fair enough. In any other case, the image needs to be refreshed a certain amount of times per second, measured in Hz. 1Hz is 1 time every second, 60Hz is 60 times a second. This measured by how often the image on screen is refreshed, not how many full frames are shown in a second, which is an important distinction when talking about Progressive vs. Interlaced Scan signals.
 
 ### Progressive Scan vs. Interlaced Scan
 
-The difference between 1080p and 1080i is not that the "p" in "1080p" stands for the word "pixels", but rather "Progressive Scan". What this means, is that the image is displayed at once. "Interlaced Scan", in for example 1080i, refers to the technique of showing the image in sequences of scanlines that alternate between each other, rather than all at once. This can lead to the percieved doubling of framerate. Interlacing was mainly used on CRTs.
+The difference between 1080p and 1080i is not that the 'p' in '1080p' stands for the word 'pixels', but rather 'Progressive Scan'. What this means, is that the image is fully rendered for every frame. The image (usually) still has scanlines, but it's shown and rendered in full.
+
+'Interlaced Scan' on the other hand, refers to the technique of showing the image in sequences of scanlines that alternate between each other, rather than all at once. If every scanline was numbered, frame #1 would only show the evenly numbered scanlines and frame #2 only the odd ones. Having to only refresh half of the image, Interlacing was mainly used on CRTs with analog video signals in order to save on bandwidth.
 
 ![Interlacing Shown](CRT_Scanlines.gif)[^1]
 
-## Output
+The above GIF shows interlacing in action. For a Progressive Scan signal, you can imagine the same scanlines, but the Scan proceeding from top to bottom _without_ skipping every other line, for every refreshed image.
 
-//TODO
+Not applying the proper techniques to de-interlace an interlaced signal can lead to artifacting and ghosting, such as follows.
 
-### FPS vs Hertz (Hz)
+![Ghosting on a Car Wheel](CRT_Scanlines_artifacting.jpg)[^2]
 
-//TODO
+You can very easily see the scanlines in action, two different frames being displayed at once. The lower the overall framerate, the worse this artifacting, since the distance between frames is likely higher.
 
 # Display Types
 
@@ -102,7 +107,7 @@ CRTs don't have a native res!!
 
 ## HDR
 
-High Dynamic Range (HDR) is a technology that makes it possible to have an image "pop", by achieving very deep blacks (or completely turned off pixels) and very bright Highlights, one next to another, if needed. HDR was not needed for a CRT, since CRTs can just choose not to illuminate a pixel, so their percieved Dynamic Range was already high from the get-go. They can't quite compare to a modern wOLED panel though, because CRTs just don't get bright enough (usually around a couple hundred nits at most).
+High Dynamic Range (HDR) is a technology that makes it possible to have an image *pop*, by achieving very deep blacks (or completely turned off pixels) and very bright Highlights, one next to another, if needed. HDR was not needed for a CRT, since CRTs can just choose not to illuminate a pixel, so their percieved Dynamic Range was already high from the get-go. They can't quite compare to a modern wOLED panel though, because CRTs just don't get bright enough (usually around a couple hundred nits at most).
 
 ## Local Dimming Zones
 
@@ -121,3 +126,4 @@ High Dynamic Range (HDR) is a technology that makes it possible to have an image
 Wireless, etc. //TODO
 
 [^1]: Laserlicht, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons
+[^2]: This work has been released into the public domain by its author, Mikus at English Wikipedia. [More info.](https://en.wikipedia.org/w/index.php?title=File:Interlaced_video_frame_%28car_wheel%29.jpg)
