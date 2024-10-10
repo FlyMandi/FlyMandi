@@ -6,7 +6,7 @@
 
 ## Dell Dimension
 
-Also known as the 'Beefy Computer' from Counter-Strike: Source, the Dell Dimension was otherwise a bogstandard Office PC that many people probably got fired on. 
+Also known as the 'Beefy Computer' from Counter-Strike: Source, the Dell Dimension was otherwise a bogstandard Office PC that many people probably commited tax fraud on.
 
 //TODO: specs
 
