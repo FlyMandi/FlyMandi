@@ -6,7 +6,9 @@
 
 ## Tape
 
-## Optical Media
+## ODDs
+
+Optical Disk Drives (ODDs) are a type of storage medium that //TODO
 
 ### CDs
 
@@ -15,6 +17,8 @@
 ## HDDs
 
 ### IDE
+
+Integrated Drive Electronics (IDE)
 
 ### SATA
 
@@ -28,9 +32,9 @@
 
 ### M.2
 
-#### SATA Controller
+#### SATA
 
-#### NVME
+#### PCIe
 
 ## Flash Drives
 

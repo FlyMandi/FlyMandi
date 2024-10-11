@@ -77,7 +77,7 @@ CRTs don't have a native res!!
 
 ## LCD
 
-//TODO
+Liquid Crystal Display (LCD) Technology //TODO
 
 ### TN
 
