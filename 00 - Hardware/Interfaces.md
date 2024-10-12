@@ -70,7 +70,7 @@ Ethernet, also known as IEEE 802.3, is the standard interface for connecting com
 | - | CAT-3 | 10 Mb/s   | 16 MHz    |
 | - | CAT-4 | 16 Mb/s   | 20 MHz    |
 | IEEE 802.3u | CAT-5 | 100 Mb/s  | 100 MHz   |
-| IEEE 802.3u | CAT-5e| 1 Gb/s  | 100 MHz     |
+| IEEE 802.3u | CAT-5e | 1 Gb/s  | 100 MHz     |
 | IEEE 802.3an | CAT-6 | 1 Gb/s | 250 MHz      |
 | IEEE 802.3an | CAT-6a | 10 Gb/s | 500 MHz    |
 | IEEE 802.3an | CAT-7 | 10 Gb/s | 600 MHz     |
