@@ -63,7 +63,7 @@ Ethernet, also known as IEEE 802.3, is the standard interface for connecting com
 //TODO
 
 ### Ethernet Speeds:
-| IEEE Spec | Name  | Max. Data Rate | Bandwidth |
+| IEEE Spec | Cable  | Max. Data Rate | Bandwidth |
 | --- | ---   | ---       | ---       |
 | - | CAT-1 | 1 Mb/s    | 0.4 MHz   | 
 | - | CAT-2 | 4 Mb/s    | 4 MHz     |
@@ -81,10 +81,26 @@ Ethernet, also known as IEEE 802.3, is the standard interface for connecting com
 CAT-8.2 doesn't use RJ45 anymore, but a particular, high-speed connector.
 
 //TODO: expand
- 
+
+### PoE
+There is also another use for Ethernet, and that's PoE. No, not the ARPG. Power over Ethernet. This connection is especially useful since some Ethernet cables can easily be more than 100 metres long, and that's only the cut-off for data loss reasons, so with PoE, since you're only putting power through the pins, you can go much higher. You do lose power, so the power drawn vs. power received by the device isn't the same, and at times not even close.
+
+| IEEE Spec       | Max. Power Draw | Max. Power to Device |
+| ---             | ---             | --- |
+| 802.3af         | 15.4 W          | 12.95 W |
+| 802.3at         | 30 W            | 25.5 W |
+| 802.3bt, Type 3 | 60 W            | 51 W |
+| 802.3bt, Type 4 | 100 W           | 71 W |
+
+CAT-5 or higher cables are required to utilize PoE. Technically, even 802.3bt can use CAT-5 cabling, but all PoE standards benefit from higher CAT standards like CAT-7 for a better output with less interference. 
+
+If you ever need to power a security camera that's an awfully long distance away from the next power source, you can use PoE. There are other uses, now that you can get more power out of PoE, such as PoE LED lighting and higher resolution cameras with cooling built-in.
+
 ## WLAN vs. Wi-Fi
 
 Known as 802.11, WLAN for us germans or Wi-Fi for everybody else.
+
+//TODO
 
 ### Wi-Fi Speeds
 | IEEE Spec | Name | Theoretical Max. Link Speed | Frequency  |
