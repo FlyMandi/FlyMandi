@@ -6,7 +6,7 @@ There are, however, some projects that you might find useful or intriguing, like
 
 | Name & Hyperlink                                  | Type              | Language  | Engine/Framework/API  | Status                       |
 | ---                                               | ---               | ---       | ---                   | ---                          |
-| [FlyMandi](https://github.com/FlyMandi/FlyMandi)  | Documentation lib | Markdown  | *N/A*                 | WIP :black_nib:           |
+| [FlyMandi](https://github.com/FlyMandi/FlyMandi)  | Encyclopedia of Things | Markdown  | *N/A*                 | WIP :black_nib:           |
 | [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)| Automation Scripts| PowerShell| .NET/Windows          | WIP ✒️                       |
 
 Below, you can see the corresponding repositories.
