@@ -14,6 +14,10 @@ Optical Disk Drives (ODDs) are a type of storage medium that //TODO
 
 ### DVDs
 
+## Floppy
+
+## Zip Drive
+
 ## HDDs
 
 ### IDE
