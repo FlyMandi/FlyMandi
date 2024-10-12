@@ -20,7 +20,19 @@ Headers are male connectors on a Motherboard that are used to connect all the in
 
 #### Fans
 
-You can find at least two PWM 4-Pin headers on a normal motherboard, one for the CPU heatsink (aka cooler) fan, and the other for the case fan(s). On a not-bottom-of-the-barrell motherboard, you'll find one or two for CPU and three or more case fan headers. They're usually labelled with CPU_FAN and CHA_FAN. Sometimes You'll see CPU_OPT or a W_PUMP for a PWM pump, or CHA_FAN instead of SYS_FAN. There are no differences between these PWM connections, other than where they're situated, usually laid out for a semblance of cable management within the case.
+You can find at least two PWM 4-Pin headers on a normal motherboard, one for the CPU heatsink (aka cooler) fan, and the other for the case fan(s). On a not-bottom-of-the-barrell motherboard, you'll find one or two for CPU and three or more case fan headers. They're usually labelled with CPU_FAN and CHA_FAN. 
+
+PWM stands for Pulse Width Modulation and with it, you can modulate a basic current in order to represent an analog signal that varies in strength. For this, the power flowing through the pin will be shut on and off, since it can either do 12V or no volts. Then, the average singal time on within a certain timeframe is used to determine the fan speed. For example, a 100% time on signal indicates the fan to operate at max speed, and a 50% time on signal indicates 50% fan speed.
+
+The pins on a standard PWM connector are the following:
+1. Ground
+2. VCC (Power, usually +12V)
+3. Sense/Tachometer
+4. Control Input/PWM Signal
+
+Sometimes You'll see CPU_OPT or a W_PUMP for a PWM pump, or CHA_FAN instead of SYS_FAN. There are no differences between these PWM connections, other than where they're situated, usually laid out for a semblance of cable management within the case.
+
+Two- and Three-pin fans do not utilize a PWM signal to determine their speed, but rather sense the voltage that's being provided through the pins in order to regulate their fan speed. This is why, if you connect a 3-pin fan to a 4-pin header, which you can do, they will always run at 100%, because the voltage running through the power pin on a PWM signal is constant.
 
 #### RGB
 
