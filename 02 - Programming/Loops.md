@@ -4,31 +4,77 @@ The idea of a loop is to take a task that would otherwise require dozens, hundre
 
 For instance, if we wanted to print all the numbers from 1 through 10 in the console, we _could_ write this:
 ```
-int main(){
-    std::print("1\n");
-    std::print("2\n");
-    std::print("3\n");
-    std::print("4\n");
-    std::print("5\n");
-    std::print("6\n");
-    std::print("7\n");
-    std::print("8\n");
-    std::print("9\n");
-    std::print("10\n");
-}
+std::printf("1\n");
+std::printf("2\n");
+std::printf("3\n");
+std::printf("4\n");
+std::printf("5\n");
+std::printf("6\n");
+std::printf("7\n");
+std::printf("8\n");
+std::printf("9\n");
+std::printf("10\n");
 ```
 But, even with copy-pasting each line and altering the number, this very quickly becomes not just slow to write, but also unreadable and just prone to typos.
 
-Alternatively, let's write a loop.
+Alternatively, we can write a loop.
 ```
-int main(){
-    for (i = 1; i < 11; ++i){
-        
-    }
+for (int i = 1; i < 11; ++i){
+    std::printf("%d \n", i);
 }
 ```
 
+It might look a little weirdly written at first, but we'll look at the anatomy of a `for(){}` loop in a bit. More importantly, these two examples will both output the same result, but I think even intuitively you can tell why loops are a thing. Loops are almost infinitely faster to write and to read than hard-coding very big blocks of code. They're also faster to compile and come with _almost_ no performance downgrade. There are other types of loops, not just the `for(){}` one we've just looked at.
+
 ## Types of Loops & use cases
+
+### For Loop
+
+Here's our for loop example, once again:
+```
+for (int i = 1; i < 11; ++i){
+    std::printf("%d \n", i);
+}
+```
+
+A C++ `for(){}` loop takes three arguments: a condition and two lines of code. In fact, if you have an eye for C++ Syntax you might have noticed that these aren't traditional arguments. They're functional lines of code, separated by a `;`. So, you can replace them with anything else, if needed. Anyhow, the first line of code is executed _once_ in the beginning, in this case `int i = 1`, which we use to [initialize](../02.5%20-%20Language%20Specifics/C++/Basics.md#c++-variables) our variable `i`. The second line is the condition which is checked against, every time the loop is run. In this case, `i < 11`, or in words, "is `i` smaller than 11?" So, if we were to have `i` be bigger than (or equal to) 11 to begin with, the loop would execute 0 times. The last line is what's executed at the end of the loop, before beginning the next instance. So, `i` gets increased to a value of 2 before the second pass.
+
+Other implementations of the for loop differ in their anatomy, but have the same use cases. For example, a Python for loop looks like this:
+```
+for i in range(1, 11):
+    print(i)
+```
+And again, produces the same result as all other previous examples.
+
+### While Loop
+
+A `while(){}` loop takes a single argument: a condition. This means that the code portion written in `{}` will be executed for as long as the condition in `()` is true.
+```
+int i = 1;
+while(i < 11){
+    std::printf("%d \n", i);
+    ++i;
+}
+```
+Note: `++i` just increases the value of `i` by 1.
+
+All we did here was write our loop in a different way, you say. And yes, this does achieve the same result as [this for loop](Loops.md#for-loop). But, while loops do have a justification for existing. Say you want to run a line of code until something happens. 
+
+If we don't know how many times we want to loop something, not even in relation to a variable, then all we'd end up writing is this:
+```
+for(; condition_check; ){
+    //code
+}
+```
+Because we can't rely on our counter `i` this time. And doesn't that ever look ugly. Why not write:
+```
+while(condition_check){
+    //code
+}
+```
+Note: both loops will continue until our [boolean](Basics.md#booleans) value `condition_check` is `false`. They are functionally the same, but the former example is just... ugly. Also, not every language is like C++ and would let you write a for loop that is functionally a while loop, so in those cases you're forced to use `while(){}`.
+
+### Do-While Loop
 
 ## Performance
 
