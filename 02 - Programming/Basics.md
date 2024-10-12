@@ -73,6 +73,26 @@ float weight = 69.42;
 const float gravity = 9.8067; 
 ```
 
+### Booleans
+
+Booleans are the simplest type of variable. They can have two values: `true` or `false`. They function the same as a logical bit, a `0` or a `1`. They're typically used as switches, but due to their small size and incredible efficiency, they can be used to improve performance, even when it might seem unintuitive to store things in a boolean.
+
+A switch example might be a variable that stores whether an action has been performed:
+```
+action_performed = true;
+```
+
+A creative approach exapmle might be an [array](Basics.md#arrays) of booleans that stores whether the number in the index is prime. That way, you can pass on the array itself or even just the function used to create it at runtime. It will be much more efficient than working with an array that stores all the integers themselves, since the space allocation for each element in the array is much larger.
+
+
+Note: Many languages translate the numbers `0` and `1` into bits, so you can inconsequentially use them in a while() loop. This means that the expression `while(number){}` can be interpreted as "while the variable 'number' is not zero". It's very recommended to learn about how the language translates integers to booleans and other specifics before using this approach, though. Like, how does it handle negative values?
+
+### Integers
+
+### Floating Points
+
+### Vectors
+
 ## Strongly vs Weakly Typed
 
 Most modern programming languages can be put into two categories: Strongly Typed and Weakly Typed. 
@@ -86,6 +106,8 @@ This, while being independent of high-level vs. low-level, usually corresponds w
 # What are Data types?
 
 //TODO
+
+## Arrays
 
 # What are pointers?
 
