@@ -1,8 +1,11 @@
+# Why C++?
+
+C++, the object-oriented version of C, is a very versatile language that's fairly [low-level](../../02%20-%20Programming/Basics.md#high-level-vs-low-level) and can grant you a lot of control over performance, like access to memory management and sophisticated pointer setups. No problem if you don't know what those two things mean, just know C++ is a very capable language.
+
 # Getting started with C++
 
 C++ is a compiled language, which means you'll need either a suitable [IDE]() or some combination of [Text Editor](), [Compiler]() and [Linker](). If you're familiar with another language, there's probably a way to tweak your setup to fit C++, but if not, I would recommend [Visual Studio](https://visualstudio.microsoft.com/vs/community/) as an IDE. Or you could do what I do, which is to use [VSCode](https://code.visualstudio.com) as a text editor and Visual Studio itself as a linker/compiler combo.
 If you're <del>a deranged lunatic</del> using macOS, I've heard XCode and Clang is a good combo.
-
 
 # Syntax
 
@@ -40,12 +43,26 @@ A function is constructed as follows:
 ```
 returnType function_name (argumentType argument_name){
     //whatever the function does
-    return result
+    return result;
 }
 ```
 For example:
 
-//TODO
+
+```
+int calc_sum (int firstNumber, int secondNumber){
+    int resulting_sum = firstNumber + secondNumber;
+    return resulting_sum;
+}
+```
+
+
+But, to save a little time & space, you can often write part of the function in the `return` statement.
+```
+int calc_sum (int firstNumber, int secondNumber){
+    return (firstNumber + secondNumber);
+}
+```
 
 ### Return Types
 
