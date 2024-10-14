@@ -13,9 +13,7 @@ Vulkan and Direct3D are both low-level APIs that, by design, remove many abstrac
 
 # Core vs Immediate
 
-You can think of these profiles as something like Python vs C++. The Immediate profile is a much more abstracted, high-level[^4] way of interfacing with the graphics card that's easy to understand but doesn't offer much of the functionality that people require to build high-performance applications like games, for example. So, I'll be going for the core profile, the much more maintained and lower-level version of OpenGL. 
-
-[^4]: A high level programming language is a language that removes the _need_ for you to do stuff like manual memory management and resource allocation, but also removes the _possibility_ to do that. This would be like driving an automatic vs a manual car. Sure, a manual gives you much more granular control over your engine, but an automatic is quicker and easier to learn when you're starting out and don't know how an engine connects to your wheels. High level means abstracted and (usually) easy to implement, while low-level usually means hard to learn and use, but very powerful and customizable. In practice, this means, if you want to build a game with OpenGL, you should learn the "core" profile.
+You can think of these profiles as something like Python vs C++. The Immediate profile is a much more abstracted, [high-level](../../02%20-%20Programming/Basics.md#high-level-vs-low-level) way of interfacing with the graphics card that's easy to understand but doesn't offer much of the functionality that people require to build high-performance applications like games, for example. So, I'll be going for the core profile, the much more maintained and lower-level version of OpenGL. 
 
 # How set up OpenGL?
 

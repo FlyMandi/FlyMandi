@@ -8,23 +8,27 @@ You can think of a programming language as a language that's used to talk to a c
 
 ## High-level vs. low-level
 
-This is a matter of perspective and mostly a tool of comparison. For example, when looking from the perspective of assembly, the language C is a high-level language, since it's much more abstracted. However, when compared to Python, C is definitely a low-level language because of the same principle. Again, Python abstracts a lot more concepts. Generally, the lower level something is, the harder it is to learn and to write, but the easier it is for the machine to compile & run. The reverse is true, since when you write code in a high-level language, it might be much easier, but the compiling/interpreting/running can take a lot more time, since memory/resource management is not a primary concern.
+A high level programming language is a language that removes the _need_ for you to do stuff like manual memory management and resource allocation, but also removes the _possibility_ to do that. This would be like driving an automatic vs a manual car. Sure, a manual gives you much more granular control over your engine, but an automatic is quicker and easier to learn when you're starting out and don't know how an engine connects to your wheels. High level means abstracted and (usually) easy to implement, while low-level usually means hard to learn and use, but very powerful and customizable.
 
-## Compilers
+This is a matter of perspective and mostly a tool of comparison. For example, when looking from the perspective of assembly, the language C is a high-level language, since it's much more abstracted. However, when compared to Python, C is definitely a low-level language because of the same principle. Again, Python abstracts a lot more concepts. Generally, the lower level something is, the harder it is to learn and to write, but the easier it is for the machine to compile & run. The reverse is true, since when you write code in a high-level language, it might be much easier, but the compiling/interpreting/running can take a lot more time, since memory/resource management is not the focus, but instead ease of use and speed of coding.
 
-//TODO
+## Text Editor
 
-## Linkers
-
-//TODO
-
-## Interpreters
+## Compiler
 
 //TODO
 
-## IDEs
+## Linker
 
-An IDE, Integrated Development Environment, includes 
+//TODO
+
+## Interpreter
+
+//TODO
+
+## IDE
+
+An IDE, Integrated Development Environment, includes everything that you'd need to build a project in a given programming language. Microsoft's Visual Studio is a great example. Eclipse is another one. Typically, an IDE has a text editor, a compiler and a linker (or their functional equivalents) all integrated.
 
 # What are variables?
 

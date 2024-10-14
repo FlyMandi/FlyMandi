@@ -4,7 +4,7 @@ C++, the object-oriented version of C, is a very versatile language that's fairl
 
 # Getting started with C++
 
-C++ is a compiled language, which means you'll need either a suitable [IDE]() or some combination of [Text Editor](), [Compiler]() and [Linker](). If you're familiar with another language, there's probably a way to tweak your setup to fit C++, but if not, I would recommend [Visual Studio](https://visualstudio.microsoft.com/vs/community/) as an IDE. Or you could do what I do, which is to use [VSCode](https://code.visualstudio.com) as a text editor and Visual Studio itself as a linker/compiler combo.
+C++ is a compiled language, which means you'll need either a suitable [IDE](../../02%20-%20Programming/Basics.md#IDE) or some combination of [Text Editor](../../02%20-%20Programming/Basics.md#text-editor), [Compiler](../../02%20-%20Programming/Basics.md#compiler) and [Linker](../../02%20-%20Programming/Basics.md#linker). If you're familiar with another language, there's probably a way to tweak your setup to fit C++, but if not, I would recommend [Visual Studio](https://visualstudio.microsoft.com/vs/community/) as an IDE. Or you could do what I do, which is to use [VSCode](https://code.visualstudio.com) as a text editor and Visual Studio itself as a linker/compiler combo.
 If you're <del>a deranged lunatic</del> using macOS, I've heard XCode and Clang is a good combo.
 
 # Syntax
