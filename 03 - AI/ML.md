@@ -1,18 +1,12 @@
 # What is Machine Learning?
 
-In principle, Machine Learning can be reduced to a function that takes a set of data as input, has a predetermined 'right' and 'wrong' answer and in building the model uses an error minimisation function. Then, that model is used to either classify, say if an image includes a dog or a cat, or approximate a result, say to predict traffic intensity in a given junction in the future.
+Machine Learning can be reduced to a function that takes a set of data as input, has a predetermined 'right' and 'wrong' answer and in building the model uses an error minimisation function. Then, that model is used to either classify, say if an image includes a dog or a cat, or approximate a result, say to predict traffic intensity in a given junction in the future.
 
-Here's what this function looks like in principle:
-```
-//TODO
-```
+Here's what this function could look like in principle:
 
-# Problems with Machine Learning
+$\begin{bmatrix} w_1 & w_2 & w_3 & w_4 \\ w_1 & w_2 & w_3 & w_4 \\ w_1 & w_2 & w_3 & w_4 \end{bmatrix}$ $\begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{bmatrix}$ + $\begin{bmatrix} b \\ b \\ b \end{bmatrix}$ = $\begin{bmatrix} w_1x_1 + w_2x_2 + w_3x_3 + w_4x_4 + b \\ w_1x_1 + w_2x_2 + w_3x_3 + w_4x_4 + b \\w_1x_1 + w_2x_2 + w_3x_3 + w_4x_4 + b \end{bmatrix}$ &rarr; $\begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix}$
 
-- Generalisation (false positives, false negatives and the impossibility of perfect generalisation)
-    Because all we're doing is making the most accurate guess based on our model's training data, the reliability of a Machine Learning model could never reach a full 100%. A hard-coded, exact calculation will always be best where accuracy is valued over output. However, once you understand that all the ML model does is give the best approximation, it can be a very powerful tool. Generalisation is the ability of the ML model to predict future data that is not part of the original data set, in other words, the whole reason we'd use an ML model to begin with. Because if it didn't, then the original data set could just be used in a hard-coded function that returns the desired result. An ML model won't, by definition, give false positives or false negatives on the training data itself, but Generalisation is where these _will_ occur and the bigger and more tailored the dataset, the more the error minimisation can do its work and false positives/negatives are lessened. A false generalisation could lead to what's known as a hallucination in a chatbot, for example, or putting 6 fingers on a hand when generating an image.
-
-    Given a set of finite data, the ability to create an ML model that responds perfectly accurate when using generalisation, that is, data points that weren't part of the original data set, is impossible. At least, to guarantee that it does, is. It is possible that by chance an ML model generates a perfect response every time, but highly unlikely and in a practical reality, impossible. Actually, even if it did, the fact that it's unverifiable, even with perfect responses, means we have to treat it with the right amount of scepticism. 
+Where our input set is [$x_1, x_2, x_3, x_4$], our weights are $w_1$ through $w_4$ and [$a_1, a_2, a_3$] our neurons. What all this means or how exactly it all works is currently not as important as understanding that the working principle of a Machine Learning model can be boiled down to a mathematical function and written out in its entirety. There is no black magic and it won't take over the world.
 
 # Machine Learning vs Generative AI; ChatGPT in principle
 
@@ -27,3 +21,20 @@ A typical Chatbot might handle your input (prompt) like this:
 5. Process ML model output, check for offensive responses and similarly undesirable words/phrases, refine
 
 The fact of the matter is, all it's doing is generating, letter by letter (or even pixel by pixel), the most statistically likely response. And of course, if you have any experience, especially with lesser models and services like NovelAI for example, you'll know the model loves to hallucinate. Worse still, since the entire prompt/response history, depending on the service, is fed back again into the model, every time the bot hallucinates it puts the hallucinations back into the dataset with all of the other potentially valuable data.
+
+# Problems with Machine Learning
+
+- Generalisation (false positives, false negatives and the impossibility of perfect generalisation)
+    Because all we're doing is making the most accurate guess based on our model's training data, the reliability of a Machine Learning model could never reach a full 100%. A hard-coded, exact calculation will always be best where accuracy is valued over output. However, once you understand that all the ML model does is give the best approximation, it can be a very powerful tool. Generalisation is the ability of the ML model to predict future data that is not part of the original data set, in other words, the whole reason we'd use an ML model to begin with. Because if it didn't, then the original data set could just be used in a hard-coded function that returns the desired result. An ML model won't, by definition, give false positives or false negatives on the training data itself, but Generalisation is where these _will_ occur and the bigger and more tailored the dataset, the more the error minimisation can do its work and false positives/negatives are lessened. A false generalisation could lead to what's known as a hallucination in a chatbot, for example, or putting 6 fingers on a hand when generating an image.
+
+    Given a set of finite data, the ability to create an ML model that responds perfectly accurate when using generalisation, that is, data points that weren't part of the original data set, is impossible. At least, to guarantee that it does, is. It is possible that by chance an ML model generates a perfect response every time, but highly unlikely and in a practical reality, impossible. Actually, even if it did, the fact that it's unverifiable, even with perfect responses, means we have to treat it with the right amount of scepticism. 
+
+# Anatomy of Machine Learning
+
+//TODO
+
+## What are weights?
+
+## What's a bias?
+
+## Whatis a neuron?
