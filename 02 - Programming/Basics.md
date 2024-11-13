@@ -36,7 +36,7 @@ A variable is, as the name implies, something that can change. Sometimes they're
 
 We store things in variables because, if we had say 100+ different calculations with numbers a and b and we need to change b, then instead of changing those 100 lines of code, we just change the one that defines what "b" is equal to.
 
-```
+```cpp
 int a = 2;
 int b = 3;
 
@@ -53,7 +53,7 @@ A constant is basically something that makes sure that we handle anything that t
 
 Let's use the metric system, cm for height, g for weight and cm/s$^2$ for gravity. No calculations, we just want to store the variables for now.
 
-```
+```cpp
 int height = 312;
 int weight = 69420;
 const int gravity = 980; 
@@ -71,7 +71,7 @@ The most common types in C++ include "int" for integer, (whole numbers), "float"
 
 As you can see, "float" allows us to be both more precise and more readable with our code here.
 
-```
+```cpp
 float height = 3.12;
 float weight = 69.42;
 const float gravity = 9.8067; 
@@ -82,7 +82,7 @@ const float gravity = 9.8067;
 Booleans are the simplest type of variable. They can have two values: `true` or `false`. They function the same as a logical bit, a `0` or a `1`. They're typically used as switches, but due to their small size and incredible efficiency, they can be used to improve performance, even when it might seem unintuitive to store things in a boolean.
 
 A switch example might be a variable that stores whether an action has been performed:
-```
+```cpp
 action_performed = true;
 ```
 

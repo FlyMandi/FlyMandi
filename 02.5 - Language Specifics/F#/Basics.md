@@ -25,7 +25,7 @@ The equality operator is ```=``` and the assignment operator is ```<-```. The la
 # Matching
 Pattern matching is one of the most fun things you can do in F#.
 Matching is defined as follows:
-```
+```f#
 match variable with
 |base_case -> output_base_case
 |variable_case_1 when condition_1 -> output_case_1
@@ -41,7 +41,7 @@ Putting the same pattern again below with no ```when``` can be read as ```input 
 
 This is a recursive function that doubles every element in a list of integers:
 
-```
+```f#
 let rec double (x: List<int>): List<int> =
     match x with 
     |[] -> []
@@ -49,7 +49,7 @@ let rec double (x: List<int>): List<int> =
 ```
 However, matching doesn't have to be this simple.
 What if we only wanted the elements that are divisible by 2 or 3? oh, and if something is divisible by 2 _and_ 3, we add a 0 to the list?
-```
+```f#
 let rec filter (x: List<int>): List<int> =
     match x with 
     |[] -> []
@@ -60,7 +60,7 @@ let rec filter (x: List<int>): List<int> =
 As you can see, there's lots you can do with pattern matching. Not just in lists and not just in this way. 
 In this case, after ```->``` could come a whole code block, provided it's indented correctly and the last line of the block corresponds with the return type of the function. 
 Like so:
-```
+```f#
 let rec double (x: List<int>): List<int> =
     match x with 
     |[] -> []

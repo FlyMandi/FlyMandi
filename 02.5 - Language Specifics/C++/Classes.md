@@ -10,7 +10,7 @@
 
 Public and private are 2 keywords that indicate whether or not a property can be accessed outside of the definition of the class or struct.
 If not specified, everything in a C++ Class will be private and everything in a struct will be public. Which is why you'll often see something like this:
-```
+```cpp
 class example{
     int private_number = 0;
 public:
@@ -18,7 +18,7 @@ public:
 };
 ```
 This is identical to:
-```
+```cpp
 class example{
 private:
     int private_number = 0;

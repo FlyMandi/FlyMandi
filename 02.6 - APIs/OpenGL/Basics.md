@@ -21,7 +21,7 @@ To use OpenGL with a basic project, I set up C++ with CMake[^2] and the followin
 Glad requires KHR, which should come with your glad download. Glfw might require a glfw3.lib and glfw3.dll that you can get from the pre-compiled binaries [here](https://www.glfw.org/download).
 OpenGL itself is imported in CMakelists.txt, like in the following example:
 [^2]: I use the VSCode extensions CMake (for intellisense) and CMaketools (for compiling) for now, but you can easily setup CMake through the Visual Studio IDE or XCode, too.
-```
+```cpp
 cmake_minimum_required(VERSION 3.5)
 project(Snake VERSION 1.0.0)
 find_package(OpenGL REQUIRED)
@@ -50,7 +50,7 @@ To compile this, I'm running the Visual Studio Community 2022 release kit for am
 
 Let's start by drawing a window to the screen. Pretty straightforward. Takes about 25 lines of code.
 This is what Andrew had in his main function:
-```
+```cpp
 GLFWwindow* window;
 
 if (!glfwInit()) {
@@ -79,13 +79,13 @@ return 0;
 Some of this should be very intuitive to understand here. ```window = glfwCreateWindow(640, 480, "Hello Window!", NULL, NULL);```, for instance. Create a 640x480p window, name it "Hello Window" and the last 2 parameters are monitor selection and context sharing. Andrew glanced over those for now, so I'm going to, too. They'll not be needed for something so rudimentary as opening a window.
 ```glfwMakeContextCurrent(window);``` is needed, because we created a window, but that's just a variable called window, so we need to tell OpenGL that that's actually the window we want to draw to the screen. 
 These small if blocks of
-```
+```cpp
 if (!glfwInit()) {
     return -1;
 }
 ```
 and
-```
+```cpp
 if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
     std::cout << "Couldn't load opengl" << std::endl;
     glfwTerminate();

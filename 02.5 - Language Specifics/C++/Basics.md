@@ -18,16 +18,16 @@ You can read further documentation [here](https://en.cppreference.com/w/cpp/lang
 
 ## C++ Variables
 Variables are declared as follows:
-```
+```cpp
 type variable_name = value;
 ```
 For example:
-```
+```cpp
 int counter = 0;
 ```
 
 There's a difference between _initializing_ and _declaring_ a variable or function in C++. What we saw was an _initialization_ with a starting value. What is also legal C++, however, is the following:
-```
+```cpp
 int unknown;
 
 //code block
@@ -40,7 +40,7 @@ However, it's important to note that if the variable ```unknown``` is accessed a
 
 ## C++ Functions
 A function is constructed as follows:
-```
+```cpp
 returnType function_name (argumentType argument_name){
     //whatever the function does
     return result;
@@ -49,7 +49,7 @@ returnType function_name (argumentType argument_name){
 For example:
 
 
-```
+```cpp
 int calc_sum (int firstNumber, int secondNumber){
     int resulting_sum = firstNumber + secondNumber;
     return resulting_sum;
@@ -58,7 +58,7 @@ int calc_sum (int firstNumber, int secondNumber){
 
 
 But, to save a little time & space, you can often write part of the function in the `return` statement.
-```
+```cpp
 int calc_sum (int firstNumber, int secondNumber){
     return (firstNumber + secondNumber);
 }
@@ -72,7 +72,7 @@ There is, however, a return type that's usually exclusive to functions[^2], name
 
 [^2]: [learn.microsoft.com](https://learn.microsoft.com/en-us/cpp/cpp/void-cpp?view=msvc-170) describes that a void type can't be assigned to a variable and is used in either functions, to specify no specific return result, or in pointers, for uses such as converting it to any type of data pointer.
 
-```
+```cpp
 void hello_world(){
     std::cout << "Hello World!\n";
 }

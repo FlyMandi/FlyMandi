@@ -5,7 +5,7 @@ Recursion within a function can be understood as the ability to call itself. The
 [^factorial]: According to the convention of an [empty product](https://en.wikipedia.org/wiki/Empty_product), ```0!``` is considered to be 1. For this example, it just made sense to use 0 as the starting case.
 
 In C++ we would write:
-```
+```cpp
 int factorial(const int& x){
     if (x == 0){ return 1; }
     else{ return (x * factorial(x - 1)); }
@@ -13,7 +13,7 @@ int factorial(const int& x){
 ```
 
 In F#, one such function would be:
-```
+```f#
 let rec factorial (x: int): int = 
     if (x = 0) then 1
     else x * (factorial (x - 1))
@@ -29,7 +29,7 @@ The Leibniz recursion template is not as widely applicable and you might need to
 Here's a function that takes every digit in a number and returns the sum of the individual digits. For example: ```sum_digits 123``` would return 6, while ```sum_digits 54``` would return 9.
 
 We're not calling our function anymore as many times as our parameter is big, because we're only calling it once for every digit. This is known as a complexity of O(log n) or logarithmic time.
-```
+```f#
 let rec sum_digits (n: int): int =
     if (n = 0) then 0
     else (sum_digits(n / 10) + n % 10)
