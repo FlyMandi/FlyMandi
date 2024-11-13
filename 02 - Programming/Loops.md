@@ -115,4 +115,4 @@ There are, however, further benefits. For example, that of reducing CPI (Cycles 
 
 By both reducing the amount of instructions and the amount of processor cycles necessary to execute those instructions, loop unrolling can reap a significant performance benefit.
 
-[^1] From [Wikipedia](https://en.wikipedia.org/wiki/Hard_coding): Hard coding (also hard-coding or hardcoding) is the software development practice of embedding data directly into the source code of a program or other executable object, as opposed to obtaining the data from external sources or generating it at runtime. 
+[^1]: From [Wikipedia](https://en.wikipedia.org/wiki/Hard_coding): Hard coding (also hard-coding or hardcoding) is the software development practice of embedding data directly into the source code of a program or other executable object, as opposed to obtaining the data from external sources or generating it at runtime. 
