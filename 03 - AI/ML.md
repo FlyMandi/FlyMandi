@@ -4,7 +4,7 @@ Machine Learning can be reduced to a function that takes a set of data as input,
 
 Here's what this function could look like in principle:
 
-$\begin{bmatrix} w_1 & w_2 & w_3 & w_4 \\ w_1 & w_2 & w_3 & w_4 \\ w_1 & w_2 & w_3 & w_4 \end{bmatrix}$ $\begin{bmatrix} x_1 \\ x_2 \\ x_3 \\ x_4 \end{bmatrix}$ + $\begin{bmatrix} b \\ b \\ b \end{bmatrix}$ = $\begin{bmatrix} w_1x_1 + w_2x_2 + w_3x_3 + w_4x_4 + b \\ w_1x_1 + w_2x_2 + w_3x_3 + w_4x_4 + b \\w_1x_1 + w_2x_2 + w_3x_3 + w_4x_4 + b \end{bmatrix}$ &rarr; $\begin{bmatrix} a_1 \\ a_2 \\ a_3 \end{bmatrix}$
+$\begin{bmatrix} w_1 & w_2 & w_3 & w_4 \\\ w_1 & w_2 & w_3 & w_4 \\\ w_1 & w_2 & w_3 & w_4 \end{bmatrix}$ $\begin{bmatrix} x_1 \\\ x_2 \\\ x_3 \\\ x_4 \end{bmatrix}$ + $\begin{bmatrix} b \\\ b \\\ b \end{bmatrix}$ = $\begin{bmatrix} w_1x_1 + w_2x_2 + w_3x_3 + w_4x_4 + b \\\ w_1x_1 + w_2x_2 + w_3x_3 + w_4x_4 + b \\\ w_1x_1 + w_2x_2 + w_3x_3 + w_4x_4 + b \end{bmatrix}$ &rarr; $\begin{bmatrix} a_1 \\\ a_2 \\\ a_3 \end{bmatrix}$
 
 Where our input set is [$x_1, x_2, x_3, x_4$], our weights are $w_1$ through $w_4$ and [$a_1, a_2, a_3$] our neurons. What all this means or how exactly it all works is currently not as important as understanding that the working principle of a Machine Learning model can be boiled down to a mathematical function and written out in its entirety. There is no black magic and it won't take over the world.
 
