@@ -9,15 +9,14 @@ Here's what this function looks like in principle:
 
 # Problems with Machine Learning
 
-Because all we're doing is making the most accurate guess based on our model's training data, the reliability of a Machine Learning model could never reach a full 100%. A hard-coded, exact calculation will always be best where accuracy is valued over output. However, once you understand that all the ML model does is give the best approximation, it can be a very powerful tool.
+- Generalisation (false positives, false negatives and the impossibility of perfect generalisation)
+    Because all we're doing is making the most accurate guess based on our model's training data, the reliability of a Machine Learning model could never reach a full 100%. A hard-coded, exact calculation will always be best where accuracy is valued over output. However, once you understand that all the ML model does is give the best approximation, it can be a very powerful tool. Generalisation is the ability of the ML model to predict future data that is not part of the original data set, in other words, the whole reason we'd use an ML model to begin with. Because if it didn't, then the original data set could just be used in a hard-coded function that returns the desired result. An ML model won't, by definition, give false positives or false negatives on the training data itself, but Generalisation is where these _will_ occur and the bigger and more tailored the dataset, the more the error minimisation can do its work and false positives/negatives are lessened. A false generalisation could lead to what's known as a hallucination in a chatbot, for example, or putting 6 fingers on a hand when generating an image.
 
-# Machine Learning vs Generative AI
+    Given a set of finite data, the ability to create an ML model that responds perfectly accurate when using generalisation, that is, data points that weren't part of the original data set, is impossible. At least, to guarantee that it does, is. It is possible that by chance an ML model generates a perfect response every time, but highly unlikely and in a practical reality, impossible. Actually, even if it did, the fact that it's unverifiable, even with perfect responses, means we have to treat it with the right amount of scepticism. 
 
-//TODO
+# Machine Learning vs Generative AI; ChatGPT in principle
 
-# ChatGPT and Generative AI in principle
-
-The more I learn about how a model like GPT-4 operates, the more I am astounded at what it can achieve with its stunningly simple principle. Given a set of data (text), which is considered an array/vector of ascii characters, it simply generates an approximate response token (character) by token. Now, there is some more complexity around extra bias selection and logic handling for something like a chatbot, where it doesn't just take all of the user input without question. 
+A generative AI is a program that is built around an ML model, the same way a car is built around an engine. It's the heart and soul and the most vital component, but by no means the only part of the car that makes it work. Just like the power of the engine needs to go to the wheels somehow, the ML model is interfaced with via a pre-processing layer. Just like a car needs steering, the initial user prompt for a Gen. AI is handled by a logic layer and context management system.
 
 A typical Chatbot might handle your input (prompt) like this:
 
@@ -28,5 +27,3 @@ A typical Chatbot might handle your input (prompt) like this:
 5. Process ML model output, check for offensive responses and similarly undesirable words/phrases, refine
 
 The fact of the matter is, all it's doing is generating, letter by letter (or even pixel by pixel), the most statistically likely response. And of course, if you have any experience, especially with lesser models and services like NovelAI for example, you'll know the model loves to hallucinate. Worse still, since the entire prompt/response history, depending on the service, is fed back again into the model, every time the bot hallucinates it puts the hallucinations back into the dataset with all of the other potentially valuable data.
-
-## What is hallucination?
