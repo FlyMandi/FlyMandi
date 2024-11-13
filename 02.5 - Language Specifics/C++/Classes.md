@@ -1,19 +1,10 @@
-# Object Oriented Programming (OOP)
-
-//TODO
-
 # Class vs Struct
 
-//TODO
-
-# Public vs Private
-
-Public and private are 2 keywords that indicate whether or not a property can be accessed outside of the definition of the class or struct.
-If not specified, everything in a C++ Class will be private and everything in a struct will be public. Which is why you'll often see something like this:
+A C++ Struct is essentially a Class, except we use it differently. A Struct has all members public by default and also inherits publicly by default. If not specified, everything in a C++ Class will be private and everything in a struct will be public. Which is why you'll often see something like this:
 ```cpp
 class example{
     int private_number = 0;
-public:
+public: //everything before this keyword is private
     int get_number(){ return private_number; }
 };
 ```
@@ -27,6 +18,8 @@ public:
 };
 ```
 In this example, functions outside of the class won't be able to access the variable ```private_number```, but instead, call the function ```get_number()```.
+
+A struct would be used for simpler, plainer data structures that don't require encapsulation, inheritance, polymorphism, etc.
 
 # Hierarchy and Inheritance
 
