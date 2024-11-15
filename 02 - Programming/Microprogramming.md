@@ -62,10 +62,20 @@ Let's break down a simple `ADD R3, R2, R1` instruction into the different stages
 
 Key notes: 
 - "Decoding" in `ID` means only here do we know what type of operation we're even performing. 
-- `PC` or `Program Counter` is the memory address we're currently at in the program. Manipulating this value not only indicates where we are in the program, but also helps with branches, loops, etc etc.
+- `PC` or `Program Counter` is the memory address we're currently at in the program. Typically incremented with every instruction (indicating that we've advanced a whole instruction); Manipulating this value not only indicates where we are in the program, but also helps with branches, loops, etc etc.
 
-There's always a lower fish.
+### Micro-operations
 
-μinstructions can be broken down into μops, which are the fundamental steps taken by each part of a CPU. Several μops make up a μinstruction, several of which make up an instruction, several of which make up a program.
+![_There's always a lower fish._](lowerfish.jpg)
+
+μinstructions can be broken down into `μops`, which are the fundamental steps taken by each part of a CPU. Several μops make up a μinstruction, several of which make up an instruction, several of which make up a program.
+An example of a `μop` would be adding our instruction length to the program counter, which happens inside the `EX` μinstruction and is carried out by the ALU[^1].
+
+You can think of a μop as whatever a single part of a processor (like an ALU) is doing inside a μinstruction process. 
 
 ## Pipelining
+
+//TODO
+
+
+[^1]: considering a simple processor that needs to wait for the ALU to calculate the PC and has no dedicated PC adder.
