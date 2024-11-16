@@ -40,6 +40,10 @@ However, we can go even lower level.
 
 //TODO
 
+#### CPI and IPC
+
+//TODO
+
 ## Microinstructions
 
 An instruction can (and has to) be broken down into different steps and final micro-instructions, often written as μinstructions.
@@ -74,6 +78,52 @@ An example of a `μop` would be adding our instruction length to the program cou
 You can think of a μop as whatever a single part of a processor (like an ALU) is doing inside a μinstruction process. 
 
 ## Pipelining
+
+Pipelining came about as a way to significantly increase program execution time. Instead of waiting for an instruction to be entirely finished before starting another, instructions are now started as soon as possible.
+
+In a simple processor without pipelining, two R-Type instructions might look like this:
+
+|                | 1         |  2        |    3      | 4     | 5 | 6 | 7 | 8 |
+| ---            | ---       | ---       | ---       | ---   | --- | --- | --- | --- |
+| ADD X3, X2, X1 | IF        | ID        | EX        | WB    |
+| SUB X6, X4, X5 |         |         |         |     | IF | ID | EX | WB
+
+And it takes 8 clocks of the processor to finish those instructions. Now, let's introduce pipelining.
+
+| | 1 | 2 | 3 | 4 | 5 |
+|---|---|---|---|---|---|
+| ADD X3, X2, X1 | IF        | ID        | EX        | WB    |
+| SUB X6, X4, X5 | | IF | ID | EX | WB|
+
+As you can see, we've finished both instructions in just 5 clocks. This result is obviously amplified, the more instructions we have.
+
+| | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| ADD X3, X2, X1 | IF        | ID        | EX        | WB    |
+| SUB X6, X4, X5 | | | | | IF | ID | EX | WB
+| ADD X9, X7, X8 | | | | | | | | | IF | ID | EX | WB
+
+Then becomes:
+| | 1 | 2 | 3 | 4 | 5 | 6 |
+|---|---|---|---|---|---|---|
+| ADD X3, X2, X1 | IF        | ID        | EX        | WB    |
+| SUB X6, X4, X5 | | IF | ID | EX | WB|
+| ADD X9, X7, X8 | | | IF | ID | EX | WB
+
+The number of instructions to be executed simultaneously is called a pipeline step. The more steps, the larger our time gain. In general, the time gained in comparison to sequential execution without pipelining would be around the amount of pipelining steps. As you can see, `8/5 = 1.6` and not `2`, like our steps. Same goes for `12/6 = 2` and not `3` The time gain will never be exactly as high as the steps, because of the time it takes to fill and empty the pipeline. In addition, steps have to be taken in order to ensure the program executes correctly. Because, what if instead of reading from different registers with `SUB X6, X4, X5`, we try to read from `X3`? We need to wait at least until clock `4` to be able to read the new value and work with it. And, what happens if we introduce other types, that take 5 clocks?
+
+This brings us to pipeline Hazards.
+
+#### Pipelining Hazards
+
+1. Data Hazards
+    - Read-after-write Hazard
+    - //
+    - //
+2. Resource Hazards
+    - //
+    - //
+    - //
 
 //TODO
 
