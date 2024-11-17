@@ -68,8 +68,8 @@ SnakeClone/
         .godot/
             (bunch of godot files)
     src/
-        //TODO
-
+        SnakeClone.h
+        SnakeClone.cpp
 ```
 
 ### 4: Link C++ to Godot via GDExtension
