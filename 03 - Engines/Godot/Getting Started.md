@@ -1,17 +1,19 @@
 # Why Godot?
 
-Godot is a fairly capable engine with support for C++, which I'm going to be using to build my games. There are possibilities of using GDScript, VisualScript or C#, but personally, I like control over a lot of the performance, hence I'm going to be using C++ with GDNative, which is their way of integrating C and C++ code into Godot projects.
+Godot is a fairly capable engine with support for C++, which I'm going to be using to a simple snake game. It's important to understand that even though C++ is 'officially supported' by Godot, you can't actually control the game logic with it. There are reasons, for instance, not having to recompile the entire engine. What you can do, however, is create `GDExtension` Nodes that _are_ controlled by C++, then utilize those Nodes within Godot with either `GDScript` or `C#`. I've settled on creating custom nodes with C++ and working with them via `GDScript`.
 
-# Setting up a project with C++
+Note: the `GDExtension` system replaces the `GDNative` implementation of earlier versions (pre 4.0).
 
-When setting up a Godot Project, you're asked to set a Project Name and Project Path. It's going to try to create it in your Documetns folder for windows, but I recommend setting up a separate folder somewhere else. The actual project folder will be named after your Project Name, as you can see.
+# Setting up a Godot project
+
+When setting up a project, you're asked to set a Project Name and Project Path. It's going to try to create it in your Documents folder for windows, but I recommend setting up a separate folder somewhere else. The actual project folder will be named after your Project Name, as you can see.
 
 ![alt text](image.png)
 
 I personally like creating a separate folder, then calling the Godot project by the build name. For example, instead of having
 
-```C:/Repository/SnakeClone``` with Project Name 'SnakeClone', it'd be
-```C:/Repository/SnakeClone/alpha``` with Project Name 'alpha'. Different build, different godot project.
+```../Games/SnakeClone``` with Project Name 'SnakeClone', it'd be
+```..Games//SnakeClone/prototype``` with Project Name 'prototype'. Different build, different godot project.
 
 Second, you're asked to choose a renderer. Given the following three options, these are the APIs they correspond to:
 
@@ -27,7 +29,37 @@ Now, let's set up our devenv[^1] and get ready to write C++ in Godot. For that, 
 
 ### 1: Install CMake & Compiler
 
-To install `CMake`, head to [the CMake download page](https://cmake.org/download/?form=MG0AV3). Then, run `cmake --version` in a command prompt to make sure you have the version you want. I'll be working with `3.30.x`.
+I'll be using `CMake`, rather than Godot's recommended way of building with `SCons`, their own weird little building, because it's limiting, slow and headache-inducing.
+
+1. To install `CMake`, head to [the CMake download page](https://cmake.org/download/?form=MG0AV3). 
+
+2. Then, run `cmake --version` in a command prompt to make sure you have the version you want. I'll be working with `3.30.x`.
+
+3. Make a `CMakeLists.txt` file and configure it:
+```CMake
+cmake_minimum_required(VERSION 3.30)
+project(gdextension-gameplay)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+include(FetchContent)
+
+FetchContent_Declare(
+        GDExtension
+        GIT_REPOSITORY https://github.com/godotengine/godot-cpp.git
+        GIT_TAG godot-4.3-stable
+)
+
+FetchContent_MakeAvailable(GDExtension)
+
+add_subdirectory(gameplay)
+```
+
+//TODO: expand
+
+More info about using Godot and CMake [here](https://thatonegamedev.com/cpp/cmake/godot-4-gdextension-for-c-using-cmake/?form=MG0AV3).
 
 The compiler I've chosen to work with is `MinGW`, since it's optimized for windows. For linux, I'd recommend `GCC` and for MacOS, `Clang`. Installing MinGW goes as follows:
 
@@ -41,40 +73,37 @@ The compiler I've chosen to work with is `MinGW`, since it's optimized for windo
 
 Clone the GitHub repository for `godot-cpp` into your top-level project folder, so that the `godot-cpp` folder lands in the same folder as your godot project. Look below for reference paths. If you are versioning your project using Git, it's a good idea to add them as Git submodules.[^3] The .gitignore[^4] files for Godot are already configured, so no need to create any by hand. 
 
-You should now have a project folder that looks something like this:
-
-```
-SnakeClone/
-    godot-cpp/
-        (all the godot cpp dependencies)
-    alpha/
-        .godot/
-            (bunch of godot files)
-```
-
-Now, let's create some headers.
-
-### 3: Create Source files
-
-//TODO
+We'll create a folder called `src/`, which is going to be our directory for the code we're writing - all our `.cpp` and `.h` files. You could separate the header files into a different folder, but I'm not going to be doing that.
 
 You should now have a project folder that looks something like this:
-
 ```
 SnakeClone/
-    godot-cpp/
-        (all the godot cpp dependencies)
-    alpha/
-        .godot/
-            (bunch of godot files)
-    src/
-        SnakeClone.h
-        SnakeClone.cpp
+|
++---godot-cpp/
+|    |
+|    +---(all the godot cpp dependencies)
+|
++---prototype/
+|    |
+|    +---.godot/
+|        |
+|        +---(bunch of godot files)
+|
++---src/
+|    |
+|    +---(code files)
+|
++---CMakeLists.txt
 ```
 
-### 4: Link C++ to Godot via GDExtension
 
-Note: the `GDExtension` system replaces the `GDNative` implementation of earlier versions (pre 4.0).
+### 3: Link C++ to Godot via GDExtension
+
+Porting our Game Logic to C++ is not as easy as it might seem, since up until here, everything has been super straight forward. However, one look at [the GDExtension example](https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/gdextension_cpp_example.html) reveals that it isn't quite the case. Godot functions by using nodes, for example one for `AnimatedSprite2D` or `CollisionShape2D` which are easy to work with and modify inside godot. You can then import them into your game logic by simply controlling them via `GDScript`. As I mentioned in the intro, you can't actually port the game logic loop to C++. That's fine by me for now, but can be a dealbreaker for some.
+
+//TODO: expand
+
+### 4: Finally writing some C++ code
 
 //TODO
 

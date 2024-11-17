@@ -111,7 +111,7 @@ note: please don't ever use `using namespace std;` unless you're just starting o
 
 #### std::vector
 
-An 
+//TODO
 
 #### std::filesystem (C++17 onwards)
 When you're trying to join a path from user input, it's not enough to simply add to a `string`. Because, if we have a partial path and we tried taking the rest of the path from user input, it would only work if the user adds no extra slashes.
