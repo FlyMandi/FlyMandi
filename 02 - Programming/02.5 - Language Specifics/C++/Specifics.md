@@ -104,6 +104,8 @@ int main() {
 ## File Structure
 
 //TODO: headers, header guards, how it all works
+//NOTE: if you just use header files for everything without inline or static or anything of the sort, it will only work if you have a bunch of header files and a single `.cpp` file. At that point, if it's a small project, you can just write everything into a single `.cpp` file anyway.
+//NOTE: unity builds do exist and there is a niche use case, but see above
 
 `human.h`:
 ```cpp
@@ -177,6 +179,10 @@ int main() {
 	copy.print();
 }
 ```
+
+## inline and static keywords for classes
+
+//TODO
 
 ## STL stuff
 
