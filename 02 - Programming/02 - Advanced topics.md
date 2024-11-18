@@ -59,23 +59,6 @@ In practice, when writing anything that's supposed to be even slightly scalable,
 
 //TODO
 
-### Unity Builds
-
-A unity build, also known as a jumbo build is a method to structuring your C or C++ programs in such a way that you reduce header compilation overhead. The idea behind it is to only have to compile each header once, even if it's included in multiple files. This is achieved due to the `#pragma once` (or other) header guard and combining multiple files (translation units) into one, that would simply `#include` all of the other source files.
-
-It's a fairly sparsely used technique and there are many advantages to having differently, more orthodox structured code with separated translation units. Unity builds are mostly used for large projects with tons of small files that each use large headers.
-
-Pros:
-    - Faster total Compilation
-    - Reduced Number of Object Files
-    - Easier to detect [One Definition Rule violations](https://en.wikipedia.org/wiki/One_Definition_Rule)
-Cons:
-    - Larger Memory Usage
-    - More Recompilation with changes than incremental builds
-    - Finnicky Namespaces
-
-More info [here](https://en.wikipedia.org/wiki/Unity_build).
-
 ### Loop Unrolling
 
 Loop unrolling is the basic idea of reducing the amount of times that a looping overhead is produced when running through many iterations of a loop. For example, instead of this basic C++ loop:
