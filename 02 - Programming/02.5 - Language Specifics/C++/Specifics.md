@@ -1,4 +1,4 @@
-# Class vs Struct
+## Class vs Struct
 
 A C++ Struct is essentially a Class, except we use it differently. A Struct has all members public by default and also inherits publicly by default. If not specified, everything in a C++ Class will be private and everything in a struct will be public. Which is why you'll often see something like this:
 ```cpp
@@ -21,15 +21,15 @@ In this example, functions outside of the class won't be able to access the vari
 
 A struct would be used for simpler, plainer data structures that don't require encapsulation, inheritance, polymorphism, etc.
 
-# Hierarchy and Inheritance
+## Hierarchy and Inheritance
 
 //TODO
 
-# Constructors and Destructors
+## Constructors and Destructors
 
 //TODO
 
-# Operator Overloads
+## Operator Overloads
 You can think of an operator overload like a contextual operator. When we add two integers, say 1 and 2, we just use the ```+``` operator and do ```1 + 2 = 3```. Now, what if we wanted to add two fractions, say $10\over3$ and $7\over4$? We can't use use our ```+``` operator here. However, if we still wanted to use the same operator for both operations in our code, we'd need to use an operator overload. Essentially, when defining an operator overload, you're defining an additional behaviour that the operator can have, depending on its context. We could tell the ```+``` operator to behave differently when dealing with fractions. <br>
 For this example, I've defined a class that just has two properties, a numerator and a denominator. If the ```+``` operator now sees that it's dealing with a ```fraction``` class, then it'll read our operator overload and behave accordingly.
 
@@ -58,6 +58,83 @@ public:
 	void print() const;
 	
 };
+
+Human::Human() : _name(unk), _height(0), _age(0) {
+	puts("Default Constructor");
+}
+
+Human::Human(const std::string& name, const int& height, const int& age)
+	: _name(name), _height(height), _age(age) {
+	puts("Constructor w/ arguments");
+}
+
+Human::Human(const Human& right) {
+	puts("Copy Constructor");
+	_name = prefix + right._name;
+	_height = right._height;
+	_age = right._age;
+}
+
+Human& Human::operator = (const Human& right) {
+	puts("Copy Operator!");
+	if (this != &right) {
+		_name = prefix + right._name;
+		_height = right._height;
+		_age = right._age;
+	}
+}
+
+Human::~Human() {
+	printf("Destructor: %s ", _name.c_str());
+}
+
+void Human::print() const {
+	printf("Hello, I'm %s, %dcm tall and %d years old.\n", _name.c_str(), _height, _age);
+}
+
+int main() {
+	Human Mandi ("FlyMandi", 176, 20);
+	Mandi.print();
+
+	const Human copy = Mandi;
+	copy.print();
+}
+```
+
+## File Structure
+
+//TODO: headers, header guards, how it all works
+
+`human.h`:
+```cpp
+#pragma once
+
+class Human {
+
+	std::string _name = "";
+	int _height = 0;
+	int _age = 0;
+	
+public: 
+
+	Human();
+	Human(const std::string& name, const int& height, const int& age);
+	Human(const Human& right);
+	Human& operator = (const Human& right);
+	~Human();
+	void print() const;
+	
+};
+```
+
+`human.cpp`:
+```cpp
+#include <iostream>
+#include <string>
+#include <human.h>
+
+const std::string unk = "unknown";
+const std::string prefix = "copy-of-";
 
 Human::Human() : _name(unk), _height(0), _age(0) {
 	puts("Default Constructor");

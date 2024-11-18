@@ -206,3 +206,7 @@ Note: both loops will continue until our [boolean](Basics.md#booleans) value `co
 # Equality, Assignment, etc.
 
 //TODO
+
+## Stack vs. Heap
+
+//TODO: which one is what and which memory type is better for which situation
