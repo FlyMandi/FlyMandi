@@ -3,31 +3,55 @@
 ```cpp
 int main (){
 	//Code
-
 	return 0;
 }
 ```
-
-//TODO: explain `return 0;`
+//TODO: explain `return 0;` and why it's not technically necessary
 
 The main function should really be the highest level of logic in your application. In a game, it's typically the frame loop, which calls functions from different places and almost describes in very simple terms what's happening. For that reason, it's not uncommon to see very abstract and simple `main(){}` functions, which makes understanding the fundamental operation of the application and keeping a holistic look on it very easy.
 
-To illustrate, a game's main function could look like this:
+To illustrate, a game's main function could very well look like this:
 ```cpp
 int main(){
-	Game.Start();
-	
-	while(!quit){
-		PollEvents();
-		Game.Process();
-		Game.DrawNextFrame();
-	}
-
-	Game.Close();
-	return 0;
+	InitializeCore();
+	RunGame();
+	ShutdownCore();
 }
 ```
-And don't think this is only applicable to very simple applications, in fact, the more complex the application, the higher the benefit of writing very little code in your main function, because you maintain that holistic view on your code. `Game.hpp` could be as complex as you like and this infrastructure has no limitation on overall capibilities, it's just a neat way to organize logic hierarchy. [Hazel Engine](https://hazelengine.com/)'s Creator "The Cherno" hinted that the main function of _the entire engine_ is no longer than maybe a dozen lines of code.
+Or even like this, if we prefer to delegate the logic entirely to `RunGame()`:
+```cpp
+int main(){
+	RunGame();
+}
+```
+Which might look cursed if you're not used to it, but I assure you this is totally valid. And don't think this is only applicable to very simple applications, in fact, the more complex the application, the higher the benefit of writing very little code in your main function, because you maintain that holistic view on your code. The functions themselves could be as complex as you like, OOP or not and this infrastructure has no limitation on overall capibilities, it's just a neat way to organize logic hierarchy. [Hazel Engine](https://hazelengine.com/)'s Creator "The Cherno", for example, showed that [the engine's main function is dead simple](https://youtu.be/OKs_JewEeOo?si=uqlXG2iVQh2phuNX&t=1277).
+
+### WinMain and entry points
+
+//TODO
+
+## Scopes
+```cpp
+//code
+{
+	//code that's within the scope
+}
+//and now we're out
+```
+
+//TODO: expand
+
+## Macros
+
+//TODO
+
+## New & Delete
+
+`new` and `delete` are keywords that...
+
+Typically avoid them when you can, since you're allocating heap memory and managing it manually. The keywords themselves aren't evil, but heap memory (almost always) is.
+
+//TODO: expand
 
 ## Class vs Struct
 

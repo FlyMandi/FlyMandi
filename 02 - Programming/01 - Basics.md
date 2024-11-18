@@ -95,6 +95,12 @@ A creative approach exapmle might be an [array](Basics.md#arrays) of booleans th
 
 Note: Many languages translate the numbers `0` and `1` into bits, so you can inconsequentially use them in a while() loop. This means that the expression `while(number){}` can be interpreted as "while the variable 'number' is not zero". It's very recommended to learn about how the language translates integers to booleans and other specifics before using this approach, though. Like, how does it handle negative values?
 
+### if statements
+
+The biggest reason to utilize `booleans` is to check against them in an `if` statement.
+
+//TODO: expand
+
 ### Integers
 
 ### Floating Points

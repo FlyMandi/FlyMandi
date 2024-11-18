@@ -49,6 +49,41 @@ O(n + 1) is still O(n) and so is O(n + 999,999,999).
 
 In practice, when writing anything that's supposed to be even slightly scalable, you should try to get the least complexity you can. If there's a way of writing it with O(log n), but it'll take you a bit of extra effort compared to O(n), it's always worth it. And, of course, you should try to avoid quadratic (or worse) times, if possible.
 
+### Nesting logic & State Machines
+
+```cpp
+if(condition){
+    //Code
+    if(condition2){
+        //more code
+    }
+    else{
+        if(condition3){
+            if(condition4){
+                //different code
+            }
+            else if(condition5){
+                //more different code
+            }
+            else{
+                //other more different code
+            }
+            //some more code because why not
+        }
+        else{
+            //the most different code
+        }
+    }
+}
+else{
+    //kill me
+}
+```
+Can you see how this quickly becomes unreadable? From a performance and implementation standpoint, there's nothing inherently wrong with nesting code, it's just awful to look at and would give anybody a nightmare trying to decipher in what case which line gets called.
+
+The solution to this spaghetti code is what's called a `State Machine`. What's a State Machine and how do we make one? Boy, I'm glad you asked.
+
+//TODO: explain State Machines
 
 ### Lambda Functions
 
