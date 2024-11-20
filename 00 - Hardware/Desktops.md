@@ -58,6 +58,22 @@ Useful to know is that the layout is now standardized and that because of this, 
 
 ## Storage
 
+## RAM
+
+RAM, or Random Access Memory, is what holds your programs that are currently up and running. It is, in principle, blazingly fast, but relatively small storage. Where RAM needs nanoseconds to access, Storage such as an SSD needs miliseconds. The RAM used in Desktops is, however, volatile, meaning when no voltage is running through your RAM, data on it is lost. 
+
+These are the types of RAM:
+1. `SRAM`: Static RAM, can hold data without power, uses transistors to store data
+2. `DRAM`: Dynamic RAM, loses data on power loss, uses capacitors to store data
+3. `SDRAM`: Synchronous Dynamic RAM, practically deprecated
+4. `VRAM`: Video RAM, dedicated RAM on Graphics Cards
+
+In a typical home desktop, `DRAM` is what's slotted into a `DIMM` slot, utilizing the `DDR` standard.
+- `DIMM`: Dual Inline Memory Module, the physical standard to interface with Motherboards
+- `DDR`: Double Data Rate, doubling effective speed, as opposed to `SDR`, Single Data Rate
+
+The confusing thing about marketing consumer DRAM is that it's labelled as "6000MHz DDR5", for example, when in reality, it's running at 3000MHz DDR, which would double it and making it 6000MT/s (Mega-transfers per second). Windows has recently switched to showing MT/s in Task Manager, but for the longest time it was technically wrong, which is the best kind of wrong.
+
 ## PSU
 
 # All-in-Ones
