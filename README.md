@@ -8,6 +8,6 @@ There are, however, some projects that you might find useful or intriguing, like
 | ---                                               | ---               | ---       | ---                   | ---                          |
 | [FlyMandi](https://github.com/FlyMandi/FlyMandi)  | Encyclopedia of Things | Markdown  | *N/A*                 | WIP :black_nib:           |
 | [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)| Automation Scripts | PowerShell | .NET/Windows          | WIP ✒️                       |
-| [Cnake](https://github.com/FlyMandi/Cnake) | 2D Game | C++ | GODOT/Vulkan | WIP ✒️ |
+| [Cnake](https://github.com/FlyMandi/Cnake) | 2D Game | C++/GDScript | GODOT/Vulkan | WIP ✒️ |
 
 Below, you can see the corresponding repositories.
