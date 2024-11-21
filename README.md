@@ -9,5 +9,5 @@ There are, however, some projects that you might find useful or intriguing, like
 | [FlyMandi](https://github.com/FlyMandi/FlyMandi)  | Encyclopedia of Things | Markdown  | *N/A*                 | WIP :black_nib:           |
 | [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)| Automation Scripts | PowerShell | .NET/Windows          | WIP ✒️                       |
 | [Cnake](https://github.com/FlyMandi/Cnake) | 2D Game | C++/GDScript | GODOT/Vulkan | WIP ✒️ |
-
+| [dotfiles](https://github.com/FlyMandi/dotfiles) | Config Files | Lua/json/etc | Many | WIP ✒️  |
 Below, you can see the corresponding repositories.
