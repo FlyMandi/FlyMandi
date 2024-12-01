@@ -1,6 +1,9 @@
 ## Welcome.
 
 I like to code (duh), particularly interested in Low-Level coding such as Game Engine Programming with C++. 
+
+I have a healthy obsession with figuring out how stuff works under the hood.
+
 Also very passionate about automation, I know PowerShell quite well and often automate tasks I find myself doing often.
 
 # List of projects:
