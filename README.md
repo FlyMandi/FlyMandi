@@ -8,10 +8,8 @@ Also very passionate about automation, I know PowerShell quite well and often au
 
 # List of projects:
 
-| Name & Hyperlink                                                  | Type              | Language      | Engine/Framework/API  | Status    |
-| ---                                                               | ---               | ---           | ---                   | ---       |
-| [FlyMandi](https://github.com/FlyMandi/FlyMandi)                  | Encyclopedia      | Markdown      | *N/A*                 | WIP ✒️     |
-| [dotfiles](https://github.com/FlyMandi/dotfiles)                  | Config Files      | Lua/json/etc  | Many                  | WIP ✒️     |
-| [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)    | Automation Scripts| PowerShell    | .NET/Windows          | WIP ✒️     |
-| [Cnake](https://github.com/FlyMandi/Cnake)                        | 2D Game           | C++           | /Vulkan               | WIP ✒️     |
+| Name & Hyperlink                                                  | Type                  | Language      | Engine/Framework/API  | Status            |
+| ---                                                               | ---                   | ---           | ---                   | ---               |
+| [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)    | Automation Scripts    | PowerShell    | .NET/Windows          | forever WIP ✒️     |
+| [Cnake](https://github.com/FlyMandi/Cnake)                        | 2D Game               | C++           | premake5/Vulkan       | WIP ✒️             |
 
