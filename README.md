@@ -10,6 +10,6 @@ Also very passionate about automation, I know PowerShell quite well and often au
 
 | Name & Hyperlink                                                  | Type                  | Language      | Engine/Framework/API  | Status            |
 | ---                                                               | ---                   | ---           | ---                   | ---               |
-| [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)    | Automation Scripts    | PowerShell    | .NET/Windows          | forever WIP ✒️     |
 | [Cnake](https://github.com/FlyMandi/Cnake)                        | 2D Game               | C++           | premake5/Vulkan       | WIP ✒️             |
-
+| [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)    | Automation Scripts    | PowerShell    | .NET/Windows          | forever WIP ✒️     |
+| Not set                                                           | Unknown               | Unknown       | Unknown               | in planning 📅    |
