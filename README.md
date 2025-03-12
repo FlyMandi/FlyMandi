@@ -12,4 +12,4 @@ Also very passionate about automation, I know PowerShell quite well and often au
 | ---                                                               | ---                   | ---           | ---                   | ---               |
 | [Cnake](https://github.com/FlyMandi/Cnake)                        | 2D Game               | C++           | premake5/Vulkan       | WIP ✒️             |
 | [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)    | Automation Scripts    | PowerShell    | .NET/Windows          | forever WIP ✒️     |
-| BlazeTerm                                                         | Performance Terminal  | C++           | Unknown               | in planning 📅    |
+| [BlazeTerm](https://github.com/FlyMandi/BlazeTerm)                | Performance Terminal  | C++           | Unknown               | in planning 📅    |
