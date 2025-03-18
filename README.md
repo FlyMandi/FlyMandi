@@ -13,3 +13,4 @@ Also very passionate about automation and the CLI, I know PowerShell quite well 
 | [River](https://github.com/FlyMandi/River)                        | 3D Game Engine        | C/C++         | Vulkan + GLFW         | WIP ✒️             |
 | [Cnake](https://github.com/FlyMandi/Cnake)                        | 2D Game               | C++           | River                 | WIP ✒️             |
 | [BlazeTerm](https://github.com/FlyMandi/BlazeTerm)                | Performance Terminal  | C++           | Unknown               | planned 📅        |
+| Unknown                                                           | Boomer Shooter        | C             | Raycasting Shenanigans| planned 📅        |
