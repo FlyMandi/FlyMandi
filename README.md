@@ -8,8 +8,10 @@ Also very passionate about task automation and the CLI.
 
 # List of projects:
 
-| Name & Hyperlink                                                  | Type                  | Language          | Engine/Framework/API  | Status            |
-| ---                                                               | ---                   | ---               | ---                   | ---               |  
-| [River](https://github.com/FlyMandi/River)                        | 3D Game Engine        | C++               | Vulkan + GLFW         | WIP ✒️             |
-| [BlazeTerm](https://github.com/FlyMandi/BlazeTerm)                | Performance Terminal  | C/C++             | Unknown               | planned 📅        |
-| Unknown                                                           | Boomer Shooter        | C/C++             | river                 | idea 💡           |
+| Name & Hyperlink                                                  | Type                  | Languages           | Engine/Framework/API  | Platforms        | Status            | 
+| ---                                                               | ---                   | ---                 | ---                   | ---              | ---               | 
+| [River](https://github.com/FlyMandi/River)                        | 3D Graphics Engine    | C/C++               | Vulkan + GLFW         | Windows + Unix   | WIP 👷🏗️         | 
+| [Snek](https://github.com/FlyMandi/Snek)                          | Simple Snake Game     | x86-64bit assembly  | WIN32                 | Windows Only     | Paused ⏸️         |
+| [BlazeTerm](https://github.com/FlyMandi/BlazeTerm)                | Performance Terminal  | C/C++               | Unknown               | Windows + Unix   | Not Started 📆    |
+| Unknown                                                           | Performance Launcher  | C/C++               | OpenGL + Clay         | Windows + Unix   | Not Started 📆    |
+| Unknown                                                           | Boomer Shooter        | C/C++               | Software Raycaster    | Windows + Unix   | Not Started 📆    |
