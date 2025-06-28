@@ -10,7 +10,7 @@ Also very passionate about task automation and the CLI.
 
 # List of projects:
 
-| Name & Hyperlink                                                  | Type                  | Languages           | Engine/API  | Platforms        | Status            | 
+| Name & Hyperlink                                                  | Type                  | Languages           | APIs | Platforms        | Status            | 
 | ---                                                               | ---                   | ---                 | ---                   | ---              | ---               | 
 | [River](https://github.com/FlyMandi/River)                        | 3D Graphics Engine    | C/C++               | Vulkan + GLFW         | Windows + Unix   | WIP 👷🏗️         | 
 | [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)    | PowerShell scripts    | PowerShell 7        | .NET                  | Windows + Unix   | Endlessly WIP 🔁  |
