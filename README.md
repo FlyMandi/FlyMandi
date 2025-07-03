@@ -6,7 +6,7 @@ I have a healthy obsession with figuring out how stuff works under the hood; I l
 
 Also very passionate about task automation and the CLI.
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FlyMandi&langs_count=6)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FlyMandi&langs_count=7)
 
 I mainly focus on the development of [River](https://github.com/FlyMandi/River), a cross-platform 3D Graphics engine.
 
