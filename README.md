@@ -1,9 +1,10 @@
 ## Welcome.
 
-I like to code (duh), particularly interested in Low-Level game and game engine programming.
+I like to code (duh), particularly interested in Low-Level game & engine programming.
 
 I have a healthy obsession with figuring out how stuff works under the hood;
-I like to build things from scratch, not only to learn, but also to build my own tools.
+I like to build things from scratch, not only to learn,
+but also to build and configure my own tools to my liking.
 
 Also very passionate about operating systems and hardware.
 
