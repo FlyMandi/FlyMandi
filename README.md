@@ -7,7 +7,7 @@ I like to build things from scratch, not only to learn, but also to build my own
 
 Also very passionate about operating systems and hardware.
 
-[top langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FlyMandi&langs_count=9)
+[!top langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FlyMandi&langs_count=9)
 
 Platforms listed below never include macOS because I have no interest in acquiring it to verify compatibility.
 In principle however, if `Windows + Linux` is specified, you can try your luck with building the project on macOS so long as the APIs/SDKs are supported.
