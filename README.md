@@ -5,7 +5,7 @@ I like to code (duh), particularly interested in Low-Level game and game engine 
 I have a healthy obsession with figuring out how stuff works under the hood;
 I like to build things from scratch, not only to learn, but also to build my own tools.
 
-Also very passionate about task automation and the CLI.
+Also very passionate about operating systems and hardware.
 
 Platforms listed below never include macOS because I have no interest in acquiring it to verify compatibility.
 In principle however, if `Windows + Linux` is specified, you can try your luck with building the project on macOS so long as the APIs/SDKs are supported.
