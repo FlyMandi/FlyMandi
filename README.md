@@ -17,7 +17,7 @@ In principle however, if `Windows + Linux` is specified, you can try your luck w
 | Name & Hyperlink                                                  | Type                  | Languages           | APIs                    | Platforms         | Status            |
 | ---                                                               | ---                   | ---                 | ---                     | ---               | ---               |
 | [River](https://github.com/FlyMandi/River)                        | 3D Graphics Engine    | C-Style C++20       | Vulkan + GLFW           | Windows + Linux   | WIP 👷🏗️          |
-| [CPong](https://github.com/FlyMandi/CPong)                        | Simple Pong Game      | C99                   | WIN32                 | Windows Only      | MVP 🏁            |
+| [CPong](https://github.com/FlyMandi/CPong)                        | Simple Pong Game      | C99                   | WIN32                 | Windows Only      | Done ✅           |
 | [PWSH-Collection](https://github.com/FlyMandi/PWSH-Collection)    | Shell scripts         | PowerShell 7        | .NET                    | Windows + Linux   | Endlessly WIP 🔁  |
 | [Snek](https://github.com/FlyMandi/Snek)                          | Simple Snake Game     | x86-64bit assembly  | WIN32                   | Windows Only      | Paused ⏸️         |
 <!-- | [BlazeTerm](https://github.com/FlyMandi/BlazeTerm)                | Performance Terminal  | C/C++               | Unknown                 | Windows + Linux    | Not Started 📆    | -->
