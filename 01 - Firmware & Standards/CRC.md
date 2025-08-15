@@ -36,11 +36,13 @@ generator polynomial is not an easy task, which is why there is usually some sta
 I'm going to use `CRC-5-EPC` because its simple polynomial of `1001` or `0x09` is long enough for our byte.
 
 So, we'd like to send the message `01100101`. But before we can do that, we have to make sure it's divisible
-by `1001` with a remainder of `0`. This is simply done by adding some bits to the end of our message. First,
-we add `k-1` zeroes to the end, `k` being the length of our generator:
+by `1001` with a remainder of `0`. This is simply done by adding some bits to the end of our message.
+We add `k-1` zeroes, `k` being the length of our generator:
 ```
 1100101000
 ```
+We also need to chop off leading 0s.
+\
 Then, we divide this number and subtract the remainder:
 ```
 1001 | 1100101000
@@ -64,7 +66,7 @@ Then, we divide this number and subtract the remainder:
              0111
 ```
 \
-Remainder is `111`, so now:
+The remainder is `111`, so now:
 ```
 1100101000 - 111 = 1100100001
 ```
