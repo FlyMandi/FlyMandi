@@ -93,10 +93,12 @@ This way, knowing nothing more than the CRC standard (generator polynomial) that
 we can check for this value being 0, and if it isn't, there was an error. If the value is 0 however, that
 does not guarantee that the message received is identical to the message sent. CRCs like this can only detect
 burst bit errors witha length of up to `k-1` bits. This means that a 4-bit polynomial like ours would detect
-errors, provided only a single bit was flipped or it's a burst error with length less than it. CRCs cannot
-correct errors on their own, as many different types of errors can produce the same remainder. A CRC with a
-generator of `1` is also known as a parity bit and is incredibly widespread in hardware, because of its
-effectiveness with virtually no computational effort.
+errors, provided only a single bit was flipped or it's a burst error with length less than it. If two or more
+non-contiguous bits are flipped, the CRC might or might not catch the error, depending on a variety of factors.
+
+CRCs cannot correct errors on their own, as many different types of errors can produce the same remainder.
+A CRC with a generator of `1` is also known as a parity bit and is incredibly widespread in hardware, because
+of its effectiveness with virtually no computational effort.
 
 It is worth noting that these divisions can of course be carried out in decimal too, if desired. The principle
 of Cyclic Redundancy Checks does not apply only to binary numbers, but unless you're doing this by hand, we're
