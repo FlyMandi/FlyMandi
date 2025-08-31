@@ -1,6 +1,5 @@
 ## Welcome.
 
-Particularly interested in Low-Level engine & graphics programming.
+Game Engine (2D/3D) & Graphics programmer.
 
-I like to build things from scratch, not only to learn,
-but also to build and configure my own tools to my liking.
+Currently pursuing a CompSci bachelor's.
