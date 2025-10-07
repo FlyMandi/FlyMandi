@@ -1,5 +1,5 @@
 ## Welcome.
 
-Game Engine (2D/3D) & Graphics programmer.
+C/C++ developer with a focus on games, game engines and development tooling.
 
-Currently pursuing a CompSci bachelor's.
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=FlyMandi?langs_count=8)](https://github.com/anuraghazra/github-readme-stats)
